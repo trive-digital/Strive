@@ -1,0 +1,29 @@
+html{
+
+  /*
+  RESPONSIVE TYPE
+  ===============
+  */
+
+  font-size: responsive 12px 16px; /* min-size, max-size */
+  font-range: 420px 1280px; /* viewport widths between which font-size is fluid */
+
+  line-height: responsive 1rem 2rem;
+  line-height-range: 420px 1280px;
+
+  letter-spacing: responsive 1px 3px;
+  letter-spacing-range: 420px 1280px;
+
+  /*
+
+  /*
+
+  LINKS
+  =====
+  */
+
+  a{
+    text-decoration: none;
+  }
+  
+}

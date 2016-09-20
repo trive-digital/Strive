@@ -1,0 +1,7 @@
+.breadcrumbs{
+  ul{
+    li{
+      display: inline-block;
+    }
+  }
+}
