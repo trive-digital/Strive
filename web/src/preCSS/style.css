@@ -15,6 +15,11 @@ TRIVE FRONT
 @import 'front/typo';
 @import 'front/breadcrumbs';
 
-/* M2 */
-@import 'front/nav';
-@import 'front/grid.css';
+/*
+
+M2 STYLES
+=========
+*/
+
+@import 'custom/nav';
+@import 'custom/grid.css';
