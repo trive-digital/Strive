@@ -1,0 +1,56 @@
+/*
+
+GLOBAL
+======
+*/
+
+$site-width: 1100px;
+
+/*
+
+RESPONSIVE TYPE
+===============
+*/
+
+$basefont-family: 'Lato', sans-serif;
+
+/* min-size, max-size */
+
+$min-font-size: 12px;
+$max-font-size: 16px;
+
+/* viewport widths between which font-size is fluid */
+
+$min-font-range: 420px;
+$max-font-range: 1280px;
+
+$min-line-height: 16px;
+$max-line-height: 24px;
+$min-line-range: 420px;
+$max-line-range: 1280px;
+
+$min-letter-spacing: 1px;
+$max-letter-spacing: 3px;
+$min-letter-range: 420px;
+$max-letter-range: 1280px;
+
+/*
+
+COLORS
+======
+*/
+
+$base-font-color: #222;
+$link-color: #60f;
+$link-hover-color: #10a;
+
+/*
+
+MEDIA & BREAKING POINTS
+=======================
+*/
+
+@custom-media --small-viewport (max-width: 640px);
+@custom-media --medium-viewport (min-width: 641px) and (max-width: 1199px);
+@custom-media --medium-up-viewport (min-width: 641px);
+@custom-media --large-viewport (min-width: 1200px);

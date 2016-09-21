@@ -1,5 +1,20 @@
+/*
+
+TRIVE FRONT
+===========
+*/
+
+@import 'settings';
+@import 'front/links';
+@import 'front/inputs';
+@import 'front/buttons';
+@import 'front/forms';
+@import 'front/selects';
 @import 'front/reset';
 @import 'front/box-sizing';
 @import 'front/typo';
 @import 'front/breadcrumbs';
+
+/* M2 */
+@import 'front/nav';
 @import 'front/grid.css';

@@ -5,7 +5,9 @@ GRID
 */
 
 body{
-  lost-center: 1100px;
+  
+  lost-center: $site-width;
+
   header{
     & > .panel{
       .links{
@@ -16,9 +18,6 @@ body{
     }
     & > .header{
       lost-utility: clearfix;
-      .nav-toggle{
-        display: none;
-      }
       .logo,
       .minicart-wrapper,
       .block-search{
@@ -26,6 +25,7 @@ body{
       }
     }
   }
+
   .nav-sections{
     nav{
       ul{
@@ -35,4 +35,15 @@ body{
       }
     }
   }
+
+  footer{
+    lost-utility: clearfix;
+    .newsletter,
+    .links,
+    .copyright,
+    .bugs{
+      lost-column: 1/2;
+    }
+  }
+
 }

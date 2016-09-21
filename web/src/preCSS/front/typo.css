@@ -1,29 +1,15 @@
 html{
 
-  /*
-  RESPONSIVE TYPE
-  ===============
-  */
+  font-family: $basefont-family;
+  color: $base-font-color;
 
-  font-size: responsive 12px 16px; /* min-size, max-size */
-  font-range: 420px 1280px; /* viewport widths between which font-size is fluid */
+  font-size: responsive $min-font-size $max-font-size;
+  font-range: $min-font-range $max-font-range;
 
-  line-height: responsive 1rem 2rem;
-  line-height-range: 420px 1280px;
+  line-height: responsive $min-line-height $max-line-height;
+  line-height-range: $min-line-range $max-line-range;
 
-  letter-spacing: responsive 1px 3px;
-  letter-spacing-range: 420px 1280px;
+  letter-spacing: responsive $min-letter-spacing $max-letter-spacing;
+  letter-spacing-range: $min-letter-range $max-letter-range;
 
-  /*
-
-  /*
-
-  LINKS
-  =====
-  */
-
-  a{
-    text-decoration: none;
-  }
-  
 }
