@@ -1,0 +1,12 @@
+/*
+
+MODALS
+======
+*/
+
+.modal-popup{
+  &.popup-authentication{
+      display: none;
+      /* NEEDS STYLING !!! */
+  }
+}

@@ -21,5 +21,8 @@ M2 STYLES
 =========
 */
 
+@import 'custom/blocks';
+@import 'custom/modals';
 @import 'custom/nav';
 @import 'custom/grid.css';
+@import 'custom/buttons';

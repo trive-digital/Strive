@@ -25,7 +25,7 @@ $min-font-range: 420px;
 $max-font-range: 1280px;
 
 $min-line-height: 16px;
-$max-line-height: 24px;
+$max-line-height: 20px;
 $min-line-range: 420px;
 $max-line-range: 1280px;
 
@@ -40,9 +40,15 @@ COLORS
 ======
 */
 
+$bliss: #fff;
+
 $base-font-color: #222;
 $link-color: #60f;
 $link-hover-color: #10a;
+
+$btn-color: $link-color;
+$btn-hover-color: $link-hover-color;
+$btn-font-color: $bliss;
 
 /*
 
@@ -50,7 +56,23 @@ MEDIA & BREAKING POINTS
 =======================
 */
 
-@custom-media --small-viewport (max-width: 640px);
-@custom-media --medium-viewport (min-width: 641px) and (max-width: 1199px);
-@custom-media --medium-up-viewport (min-width: 641px);
-@custom-media --large-viewport (min-width: 1200px);
+@custom-media --small (max-width: 640px);
+@custom-media --medium (min-width: 641px) and (max-width: 1199px);
+@custom-media --medium-up (min-width: 641px);
+@custom-media --large-up (min-width: 1200px);
+
+/*
+
+PADDINGS
+========
+*/
+
+$global-padding: 4px 10px;
+
+/*
+
+RADIUS
+======
+*/
+
+$global-radius: 0px;

@@ -1,5 +1,44 @@
-@media (--medium-up-viewport){
-  .nav-toggle{
+/*
+
+NAVIGATION
+==========
+*/
+
+@media (--medium-up){
+  .nav-toggle,
+  .nav-sections-item-title{
     display: none;
   }
+
+  /* DESKTOP MENU */
+
+  .nav-sections{
+    nav{
+      ul{
+        li{
+          display: inline-block;
+          vertical-align: top;
+          ul{
+            position: absolute!important;
+            background: $bliss;
+            li{
+              display: block;
+              ul{
+                position: absolute;
+                top: 0!important;
+                left: 100%!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (--small){
+
+  /* MOBILE MENU */
+
 }

@@ -1,0 +1,11 @@
+/*
+
+BLOCKS
+======
+*/
+
+.block{
+  .block-title{
+    display: none;
+  }
+}
