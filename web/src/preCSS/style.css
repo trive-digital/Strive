@@ -14,6 +14,8 @@ TRIVE FRONT
 @import 'front/box-sizing';
 @import 'front/typo';
 @import 'front/breadcrumbs';
+@import 'front/toolbar';
+@import 'front/table';
 
 /*
 
@@ -26,3 +28,5 @@ M2 STYLES
 @import 'custom/nav';
 @import 'custom/grid.css';
 @import 'custom/buttons';
+@import 'custom/catalog';
+@import 'custom/product';

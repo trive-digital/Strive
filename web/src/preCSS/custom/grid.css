@@ -29,6 +29,42 @@ body{
     }
   }
 
+  /* Global */
+  &.page-layout-2columns-left{
+    .columns{
+      lost-utility: clearfix;
+      .main{
+          lost-column: 4/5 1;
+      }
+      .sidebar{
+        &.sidebar{
+          &-main,
+          &-additional{
+            lost-column: 1/5 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.page-layout-1column{
+    .columns{
+      lost-utility: clearfix;
+      .main{
+        lost-column: 1/1;
+        .product-info-main{
+          lost-column: 3/8 1;
+        }
+        .media{
+          lost-column: 5/8;
+        }
+        .detailed{
+          lost-column: 1/1;
+        }
+      }
+    }
+  }
+
   footer{
     lost-utility: clearfix;
     .newsletter,

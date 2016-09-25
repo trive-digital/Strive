@@ -1,0 +1,10 @@
+.products-grid{
+  lost-utility: clearfix;
+  .item{
+      lost-waffle: 1/4;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+  }
+}

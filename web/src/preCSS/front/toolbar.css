@@ -1,0 +1,14 @@
+.toolbar{
+  .modes,
+  .toolbar-amount,
+  .pages,
+  .limiter,
+  .sorter{
+    display: inline-block;
+    vertical-align: top;
+  }
+  #modes-label,
+  .label{
+    display: none;
+  }
+}

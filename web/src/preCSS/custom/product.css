@@ -1,0 +1,22 @@
+.product{
+  &-info-main{
+
+  }
+  &.media{
+
+  }
+  &.detailed{
+    .item{
+      &.title{
+        float: left;
+        width: auto;
+      }
+      &.content{
+        float: right;
+        margin: 1rem 0 0 -100%;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+}
