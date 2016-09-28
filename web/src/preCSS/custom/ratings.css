@@ -1,0 +1,23 @@
+.rating-summary{
+  display: inline-block;
+  .label{
+    display: none;
+  }
+  .rating-result{
+    display: inline-block;
+    position: relative;
+    width: 83px;
+    & > span{
+      display: inline-block;
+      overflow: hidden;
+      &:before{
+        content: '\2605' '\2605' '\2605' '\2605' '\2605';
+        position: relative;
+        color: $link-color;
+      }
+      span{
+        display: none;
+      }
+    }
+  }
+}
