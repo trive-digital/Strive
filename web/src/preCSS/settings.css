@@ -45,6 +45,7 @@ $bliss: #fff;
 $base-font-color: #222;
 $link-color: #60f;
 $link-hover-color: #10a;
+$alert-color: #f00;
 
 $btn-color: $link-color;
 $btn-hover-color: $link-hover-color;

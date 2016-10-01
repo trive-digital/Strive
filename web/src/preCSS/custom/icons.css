@@ -1,0 +1,63 @@
+/*
+
+LINKS
+=====
+*/
+
+.towishlist,
+.tocompare,
+.mailto,
+.sorter-action,
+.previous,
+.next{
+    &:after{
+      display: inline-block;
+      font-size: 18px;
+    }
+    span{
+      display: none;
+    }
+}
+
+.towishlist{
+  &:after{
+    content: "\2665";
+  }
+}
+
+.tocompare{
+  &:after{
+    content: "\21D4";
+  }
+}
+
+.mailto{
+  &:after{
+    content: "\2709";
+  }
+}
+
+.sorter-action{
+  &.sort-asc{
+    &:after{
+      content: "\2B06"
+    }
+  }
+  &.sort-desc{
+    &:after{
+      content: "\2B07"
+    }
+  }
+}
+
+.previous{
+  &:after{
+    content: "\2190";
+  }
+}
+
+.next{
+  &:after{
+    content: "\2192";
+  }
+}

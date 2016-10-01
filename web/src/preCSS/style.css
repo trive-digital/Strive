@@ -23,6 +23,7 @@ M2 STYLES
 =========
 */
 
+@import 'custom/icons';
 @import 'custom/blocks';
 @import 'custom/modals';
 @import 'custom/nav';
@@ -31,3 +32,5 @@ M2 STYLES
 @import 'custom/catalog';
 @import 'custom/product';
 @import 'custom/ratings';
+@import 'custom/toolbar';
+@import 'custom/filter';

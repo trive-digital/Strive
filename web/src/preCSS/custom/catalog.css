@@ -1,10 +1,25 @@
-.products-grid{
-  lost-utility: clearfix;
-  .item{
-      lost-waffle: 1/4;
-      img{
-        max-width: 100%;
-        height: auto;
-      }
+@media (--small){
+  .products-grid{
+    lost-utility: clearfix;
+    .item{
+        lost-waffle: 1/2;
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+    }
+  }
+}
+
+@media (--medium-up){
+  .products-grid{
+    lost-utility: clearfix;
+    .item{
+        lost-waffle: 1/4;
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+    }
   }
 }

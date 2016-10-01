@@ -4,8 +4,23 @@ BLOCKS
 ======
 */
 
-.block{
-  .block-title{
-    display: none;
+@media (--small){
+  .block{
+    &.filter{
+      .block-title{
+
+      }
+      .block-content{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (--medium-up){
+  .block{
+    .block-title{
+      display: none;
+    }
   }
 }

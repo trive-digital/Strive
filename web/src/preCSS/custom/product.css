@@ -1,21 +1,23 @@
-.product{
-  &-info-main{
+@media (--medium-up){
+  .product{
+    &-info-main{
 
-  }
-  &.media{
+    }
+    &.media{
 
-  }
-  &.detailed{
-    .item{
-      &.title{
-        float: left;
-        width: auto;
-      }
-      &.content{
-        float: right;
-        margin: 1rem 0 0 -100%;
-        width: 100%;
-        text-align: left;
+    }
+    &.detailed{
+      .item{
+        &.title{
+          float: left;
+          width: auto;
+        }
+        &.content{
+          float: right;
+          margin: 1rem 0 0 -100%;
+          width: 100%;
+          text-align: left;
+        }
       }
     }
   }
