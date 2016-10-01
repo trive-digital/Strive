@@ -33,18 +33,18 @@ body{
   &.page-layout-2columns-left{
     @media (--small){
       .columns{
-        lost-utility: clearfix;
+        display: flex;
+        flex-direction: column;
         .main{
-            lost-column: 1 0;
+            order: 2;
         }
         .sidebar{
           &.sidebar{
             &-additional{
-              lost-column: 1 0;
+              order: 3;
             }
             &-main{
-              position: absolute;
-
+              order: 1;
             }
           }
         }
