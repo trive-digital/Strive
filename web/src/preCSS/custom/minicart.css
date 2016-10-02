@@ -1,0 +1,16 @@
+/*
+
+MINICART
+========
+*/
+
+.minicart-wrapper{
+  position: relative;
+  float: right;
+  .block-minicart{
+    position: absolute;
+    width: 290px;
+    top: 20px;
+    right: 0;
+  }
+}

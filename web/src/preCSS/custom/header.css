@@ -1,0 +1,14 @@
+/*
+
+HEADER
+======
+*/
+
+@media (--small){
+  header{
+    .links,
+    .contentarea{
+      display: none;
+    }
+  }
+}

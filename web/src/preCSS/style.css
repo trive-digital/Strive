@@ -23,6 +23,8 @@ M2 STYLES
 =========
 */
 
+@import 'custom/header';
+@import 'custom/minicart';
 @import 'custom/icons';
 @import 'custom/blocks';
 @import 'custom/modals';

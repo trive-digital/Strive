@@ -21,10 +21,9 @@ body{
       .logo,
       .minicart-wrapper,
       .block-search{
-        lost-column: 1/3 0;
-      }
-      .minicart-wrapper{
-        float: right!important;
+        /*lost-column: 1/3 0;*/
+        display: inline-block;
+        vertical-align: middle;
       }
     }
   }

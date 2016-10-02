@@ -4,6 +4,15 @@ BLOCKS
 ======
 */
 
+.block{
+  background: $bliss;
+  &.block-search{
+    float: right;
+    .block-title{
+      display: none;
+    }
+  }
+}
 @media (--small){
   .block{
     &.filter{
@@ -11,7 +20,7 @@ BLOCKS
 
       }
       .block-content{
-        display: none;
+        display: block;
       }
     }
   }
@@ -21,6 +30,11 @@ BLOCKS
   .block{
     .block-title{
       display: none;
+    }
+    &.block-search{
+      label{
+        display: none;
+      }
     }
   }
 }

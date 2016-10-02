@@ -1,6 +1,6 @@
 /*
 
-LINKS
+ICONS
 =====
 */
 
@@ -9,7 +9,9 @@ LINKS
 .mailto,
 .sorter-action,
 .previous,
-.next{
+.next,
+.nav-toggle,
+.search label{
     &:after{
       display: inline-block;
       font-size: 18px;
@@ -59,5 +61,12 @@ LINKS
 .next{
   &:after{
     content: "\2192";
+  }
+}
+
+.nav-toggle{
+  &:before{
+    content: '\2261';
+    font-size: 34px;
   }
 }

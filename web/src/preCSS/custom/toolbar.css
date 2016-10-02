@@ -11,8 +11,7 @@ TOOLBAR
       .pages{
         display: none;
       }
-      .sorter,
-      .toolbar-amount{
+      .sorter{
         float: right;
       }
   }

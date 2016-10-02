@@ -39,6 +39,62 @@ NAVIGATION
 
 @media (--small){
 
-  /* MOBILE MENU */
+  .nav-sections{
+    -webkit-overflow-scrolling: touch;
+    transition: left 0.3s;
+    height: 100%;
+    left: -80%;
+    left: calc(-1 * (100% - 54px));
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    width: calc(100% - 54px);
+    background: $bliss;
+  }
+  .nav-before-open{
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    body{
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    .page-wrapper{
+      transition: left 0.3s;
+      height: 100%;
+      left: 0;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  .nav-toggle{
+    cursor: pointer;
+  }
+  .nav-open{
+    .page-wrapper {
+      left: calc(100% - 54px);
+    }
+    .nav-toggle{
+      &:after{
+        background: rgba(0, 0, 0, 0.8);
+        content: '';
+        display: block;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+    .nav-sections{
+      box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+      left: 0;
+      z-index: 99;
+    }
+  }
 
 }
