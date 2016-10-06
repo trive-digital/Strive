@@ -3,6 +3,6 @@
     <head>
         <css src="css/style.css"/>
         <css src="css/print.css" media="print"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" src_type="url"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" src_type="url" />
     </head>
 </page>

@@ -12,8 +12,8 @@ BUTTONS
   cursor: pointer;
   text-align: center;
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  padding: $global-padding;
-  border-radius: $global-radius;
+  padding: $btn-padding;
+  border-radius: $btn-radius;
   border: initial;
   background: $btn-color;
   color: $btn-font-color;

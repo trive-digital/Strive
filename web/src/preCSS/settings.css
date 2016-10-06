@@ -8,11 +8,24 @@ $site-width: 80%;
 
 /*
 
+COLORS
+======
+*/
+
+$bliss: #fff;
+$mine-shaft: #222;
+$primary-color: #1979c3;
+$alert-color: #f00;
+$success-color: #0f0;
+
+/*
+
 RESPONSIVE TYPE
 ===============
 */
 
-$basefont-family: 'Lato', sans-serif;
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-color: $mine-shaft;
 
 /* min-size, max-size */
 
@@ -36,23 +49,6 @@ $max-letter-range: 1280px;
 
 /*
 
-COLORS
-======
-*/
-
-$bliss: #fff;
-
-$base-font-color: #222;
-$link-color: #60f;
-$link-hover-color: #10a;
-$alert-color: #f00;
-
-$btn-color: $link-color;
-$btn-hover-color: $link-hover-color;
-$btn-font-color: $bliss;
-
-/*
-
 MEDIA & BREAKING POINTS
 =======================
 */
@@ -64,16 +60,21 @@ MEDIA & BREAKING POINTS
 
 /*
 
-PADDINGS
-========
+BUTTONS
+=======
 */
 
-$global-padding: 4px 10px;
+$btn-radius: 3px;
+$btn-color: $primary-color;
+$btn-hover-color: color($primary-color l(35%));
+$btn-font-color: $bliss;
+$btn-padding: 4px 10px;
 
 /*
 
-RADIUS
-======
+LINKS
+=====
 */
 
-$global-radius: 0px;
+$link-color: $primary-color;
+$link-hover-color: color($primary-color l(35%));

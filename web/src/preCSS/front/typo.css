@@ -6,7 +6,7 @@ TYPO
 
 html{
 
-  font-family: $basefont-family;
+  font-family: $base-font-family;
   color: $base-font-color;
 
   font-size: responsive $min-font-size $max-font-size;
