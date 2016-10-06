@@ -38,7 +38,6 @@ NAVIGATION
 }
 
 @media (--small){
-
   .nav-sections{
     -webkit-overflow-scrolling: touch;
     transition: left 0.3s;
@@ -94,6 +93,28 @@ NAVIGATION
       box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
       left: 0;
       z-index: 99;
+      .section-item-title{
+        float: left;
+        width: 33.33%;
+      }
+      .section-item-content{
+        float: right;
+        margin-left: -100%;
+        width: 100%;
+        margin-top: 2rem;
+        nav{
+          & > ul{
+            li{
+              & > ul{
+                  top: auto!important;
+              }
+            }
+          }
+        }
+        .compare{
+          display: none;
+        }
+      }
     }
   }
 

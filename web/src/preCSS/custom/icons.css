@@ -70,3 +70,38 @@ ICONS
     font-size: 34px;
   }
 }
+
+@media (--small){
+  nav{
+    .parent{
+      .level-top{
+        &:after{
+          position: absolute;
+          right: 0;
+          content: '\25BC';
+        }
+        &.ui-state-active{
+          &:after{
+            content: '\25B2';
+          }
+        }
+      }
+    }
+  }
+  .switcher-trigger{
+    strong{
+      &:after{
+        position: absolute;
+        right: 0;
+        content: '\25BC';
+      }
+    }
+    &.active{
+      strong{
+        &:after{
+          content: '\25B2';
+        }
+      }
+    }
+  }
+}

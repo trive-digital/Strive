@@ -7,7 +7,16 @@ HEADER
 @media (--small){
   header{
     .links,
-    .contentarea{
+    .contentarea,
+    .switcher{
+      display: none;
+    }
+  }
+}
+
+@media (--medium-up){
+  .switcher{
+    .switcher-label{
       display: none;
     }
   }

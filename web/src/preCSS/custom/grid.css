@@ -7,7 +7,9 @@ GRID
 body{
 
   lost-center: $site-width;
-
+  @media (--small){
+    lost-center: $mobile-site-width;
+  }
   header{
     & > .panel{
       .links{
