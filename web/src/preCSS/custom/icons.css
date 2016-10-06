@@ -10,8 +10,7 @@ ICONS
 .sorter-action,
 .previous,
 .next,
-.nav-toggle,
-.search label{
+.nav-toggle{
     &:after{
       display: inline-block;
       font-size: 18px;

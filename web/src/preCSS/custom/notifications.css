@@ -1,0 +1,18 @@
+/*
+
+NOTIFICATIONS
+=============
+*/
+
+.message{
+  &.success{
+    color: $success-color;
+  }
+  &.error{
+    color: $error-color;
+  }
+}
+
+.mage-error{
+  color: $error-color;
+}
