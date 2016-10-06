@@ -15,8 +15,13 @@ HEADER
 }
 
 @media (--medium-up){
-  .switcher{
-    .switcher-label{
+  header{
+    .switcher{
+      .switcher-label{
+        display: none;
+      }
+    }
+    .contentarea{
       display: none;
     }
   }

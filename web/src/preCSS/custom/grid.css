@@ -113,11 +113,25 @@ body{
 
   footer{
     lost-utility: clearfix;
-    .newsletter,
-    .links,
+    .block{
+      lost-column: 1/2 1;
+      .newsletter,
+      .actions{
+        display: inline-block;
+      }
+    }
+    .links{
+      lost-column: 1/2 0;
+    }
+    @media (--small){
+      .block,
+      .links{
+        lost-column: 1;
+      }
+    }
     .copyright,
     .bugs{
-      lost-column: 1/2;
+      lost-column: 1;
     }
   }
 

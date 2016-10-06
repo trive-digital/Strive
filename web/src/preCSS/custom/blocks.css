@@ -12,7 +12,18 @@ BLOCKS
       display: none;
     }
   }
+  &.newsletter{
+    text-align: right;
+    .title,
+    label{
+      display: none;
+    }
+    @media (--small){
+      text-align: left;
+    }
+  }
 }
+
 @media (--small){
   .block{
     &.filter{

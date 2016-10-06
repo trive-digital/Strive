@@ -4,7 +4,7 @@ GLOBAL
 ======
 */
 
-$site-width: 80%;
+$site-width: 1280px;
 $mobile-site-width: 100%;
 
 /*
@@ -27,6 +27,11 @@ RESPONSIVE TYPE
 
 $base-font-family: 'Open Sans', sans-serif;
 $base-font-color: $mine-shaft;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
 
 /* min-size, max-size */
 
