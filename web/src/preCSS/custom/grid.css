@@ -126,7 +126,27 @@ body{
         }
     }
   }
-
+  
+  .cart-container{
+    lost-utility: clearfix;
+    .cart-summary{
+      @media (--small){
+        lost-column: 1;
+      }
+      @media (--medium-up){
+        lost-column: 1/4 1;
+      }
+    }
+    #form-validate{
+      @media (--small){
+        lost-column: 1;
+      }
+      @media (--medium-up){
+        lost-column: 3/4 0;
+      }
+    }
+  }
+  
   footer{
     lost-utility: clearfix;
     .block{
