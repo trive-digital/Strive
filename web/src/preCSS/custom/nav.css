@@ -9,6 +9,18 @@ NAVIGATION
   .nav-sections-item-title{
     display: none;
   }
+  .nav-sections{
+    .section-item-content{
+      display: block!important;
+        .links,
+        .switcher{
+          display: none;
+        }
+        nav{
+          display: block!important;
+        }
+    }
+  }
 
   /* DESKTOP MENU */
 
