@@ -25,6 +25,7 @@ NAVIGATION
   /* DESKTOP MENU */
 
   .nav-sections{
+    background: $nav-background;
     nav{
       ul{
         li{

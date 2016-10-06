@@ -14,6 +14,7 @@ COLORS
 */
 
 $bliss: #fff;
+$gray: #f5f5f5;
 $mine-shaft: #222;
 $primary-color: #1979c3;
 $alert-color: #f00;
@@ -84,3 +85,11 @@ LINKS
 
 $link-color: $primary-color;
 $link-hover-color: color($primary-color l(35%));
+
+/*
+
+NAVIGATION
+==========
+*/
+
+$nav-background: $gray;

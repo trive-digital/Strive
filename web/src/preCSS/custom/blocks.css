@@ -7,11 +7,71 @@ BLOCKS
 .block{
   background: $bliss;
   &.block-search{
+    @media (--medium-up){
+      position: relative;
+    }
     float: right;
     .block-title{
       display: none;
     }
+    #search{
+      @media (--medium-up){
+          width: 270px;
+          padding: 0 70px 0 0;
+      }
+    }
+    .actions{
+      .action{
+        position: absolute;
+        top: 0;
+        right: 0;
+        &.search[disabled]{
+          cursor: not-allowed;
+          pointer-events: none;
+          opacity: .5;
+        }
+      }
+    }
+    @media (--small){
+      float: initial;
+      .field{
+        &.search{
+          .advanced{
+            display: none;
+          }
+          .control{
+            input{
+              width: 100%;
+              position: absolute;
+              left: -300%;
+              padding: 0;
+            }
+          }
+          label{
+            span{
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 80px;
+            }
+            &.active{
+              & + .control{
+                input{
+                  position: static;
+                }
+              }
+            }
+          }
+        }
+      }
+      .actions{
+        .search{
+          display: none;
+        }
+      }
+    }
   }
+  
   &.newsletter{
     text-align: right;
     .title,
@@ -22,6 +82,7 @@ BLOCKS
       text-align: left;
     }
   }
+  
 }
 
 @media (--small){

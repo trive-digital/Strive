@@ -12,5 +12,6 @@ MINICART
     width: 290px;
     top: 20px;
     right: 0;
+    z-index: 1;
   }
 }

@@ -6,11 +6,14 @@ GRID
 
 body{
 
-  lost-center: $site-width;
-  @media (--small){
-    lost-center: $mobile-site-width;
-  }
   header{
+    & > .panel,
+    .header{
+      lost-center: $site-width;
+      @media (--small){
+        lost-center: $mobile-site-width;
+      }
+    }
     & > .panel{
       .links{
         li{
@@ -21,12 +24,25 @@ body{
     & > .header{
       lost-utility: clearfix;
       .logo,
-      .minicart-wrapper,
-      .block-search{
-        /*lost-column: 1/3 0;*/
+      .minicart-wrapper{
         display: inline-block;
         vertical-align: middle;
       }
+      .block-search{
+        @media (--medium-up){
+            display: inline-block;
+        }
+      }
+    }
+  }
+
+  #maincontent,
+  footer,
+  .breadcrumbs,
+  .nav-sections-items{
+    lost-center: $site-width;
+    @media (--small){
+      lost-center: $mobile-site-width;
     }
   }
 

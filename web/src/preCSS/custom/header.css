@@ -21,8 +21,15 @@ HEADER
         display: none;
       }
     }
-    .contentarea{
+    .contentarea,
+    .links .compare{
       display: none;
+    }
+    .links{
+      float: right;
+    }
+    .switcher{
+      float: left;
     }
   }
 }
