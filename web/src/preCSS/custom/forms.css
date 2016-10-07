@@ -4,6 +4,19 @@ FORMS
 =====
 */
 
+form{
+  .field{
+    &.choice{
+      input,
+      label{
+        display: inline-block;
+        vertical-align: middle;
+        width: initial;
+      }
+    }
+  }
+}
+
 @media (--medium-up){
   .form{
     &.password.reset, 

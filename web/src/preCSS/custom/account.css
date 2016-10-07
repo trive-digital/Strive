@@ -1,0 +1,14 @@
+/*
+
+ACCOUNT
+=======
+*/
+
+.account{
+  .toolbar{
+    .limiter{
+      display: block;
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/*
+
+TABLE
+=====
+*/
+
+.account{
+  .orders-recent,
+  .orders-history,
+  .reviews{
+    table{
+      caption{
+        display: none;
+      }
+      @media (--small){
+        thead{
+          tr{
+            th{
+              display: none;
+            }
+          }
+        }
+        tbody{
+          td{
+            display: block;
+            &:before{
+              padding-right: 10px;
+              content: attr(data-th) ': ';
+              display: inline-block;
+              color: $mine-shaft;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

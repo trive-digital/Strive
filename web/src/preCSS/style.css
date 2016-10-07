@@ -40,5 +40,7 @@ M2 STYLES
 @import 'custom/filter';
 @import 'custom/notifications';
 @import 'custom/switchers';
+@import 'custom/account';
+@import 'custom/table';
 @import 'custom/cart';
 @import 'custom/checkout';

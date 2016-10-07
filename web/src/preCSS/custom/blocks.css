@@ -98,6 +98,29 @@ BLOCKS
     }
   }
   
+  &.account-nav{
+    background: $gray;
+  }
+  
+  &.block-reorder{
+    ol{
+      li{
+        .item{
+          display: inline-block;
+          vertical-align: middle;
+          width: 1rem;
+          .label{
+            display: none;
+          }
+        }
+        .product-item-name{
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  
 }
 
 .modal-content{

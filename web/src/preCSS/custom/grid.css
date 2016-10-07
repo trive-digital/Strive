@@ -67,12 +67,48 @@ body{
         }
       }
     }
-
+    
+    &.account{
+      @media (--small){
+        .columns{
+          display: flex;
+          flex-direction: column;
+          .main{
+              order: 1;
+          }
+          .sidebar{
+            &.sidebar{
+              &-additional{
+                order: 3;
+              }
+              &-main{
+                order: 2;
+              }
+            }
+          }
+        }
+      }
+      
+      @media (--medium-up){
+        .columns{
+          .main{
+            .block{
+              lost-utility: clearfix;
+              .box{
+                lost-column: 1/2;
+              }
+            }
+          }      
+        }
+      }
+    }
+    
     @media (--medium-up){
       .columns{
         lost-utility: clearfix;
         .main{
             lost-column: 4/5 1;
+            min-height: 300px;
         }
         .sidebar{
           &.sidebar{

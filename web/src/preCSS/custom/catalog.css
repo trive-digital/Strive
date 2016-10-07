@@ -7,7 +7,7 @@ CATALOG
 
 .products-grid{
   lost-utility: clearfix;
-  .item{
+  .product-item{
       lost-waffle: 1/2;
       @media (--medium){
         lost-waffle: 1/3;
