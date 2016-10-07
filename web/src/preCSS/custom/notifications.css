@@ -6,10 +6,12 @@ NOTIFICATIONS
 
 .message{
   &.success{
-    color: $success-color;
+    color: $notify-success;
+    background: $success-bg;
   }
   &.error{
-    color: $error-color;
+    color: $notify-error;
+    background: $error-bg;
   }
 }
 

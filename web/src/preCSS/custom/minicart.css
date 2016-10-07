@@ -7,12 +7,39 @@ MINICART
 .minicart-wrapper{
   position: relative;
   float: right;
+  .counter-label{
+    display: none;
+  }
   .block-minicart{
     position: absolute;
     width: 290px;
     top: 20px;
     right: 0;
     z-index: 1;
+    .block-title{
+      display: none;
+    }
+    #btn-minicart-close{
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .subtotal{
+      text-align: right;
+    }
+    .actions{
+      text-align: center;
+    }
+    .subtitle{
+      display: none;
+    }
+    .minicart-items-wrapper{
+      .actions{
+        .primary,
+        .secondary{
+          text-align: right;
+        }
+      }
+    }
   }
 }
 

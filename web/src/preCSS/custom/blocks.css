@@ -83,6 +83,21 @@ BLOCKS
     }
   }
   
+  &.block-customer-login{
+    @media (--small){
+      background: $gray;
+    }
+    .primary,
+    .secondary{
+      text-align: right;
+    }
+    @media (--small){
+      .block-title{
+          text-align: left;
+      }
+    }
+  }
+  
 }
 
 @media (--small){
@@ -101,7 +116,7 @@ BLOCKS
 @media (--medium-up){
   .block{
     .block-title{
-      display: none;
+      /*display: none;*/
     }
     &.block-search{
       label{

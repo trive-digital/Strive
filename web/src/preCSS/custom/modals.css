@@ -5,8 +5,140 @@ MODALS
 */
 
 .modal-popup{
-  &.popup-authentication{
-      display: none;
-      /* NEEDS STYLING !!! */
+  z-index: 900;
+  left: 0;
+  overflow-y: auto;
+  .modal-inner-wrap{
+    margin: 5rem auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: translateY(-200%);
+    transition-duration: .2s;
+    transition-property: transform, visibility;
+    transition-timing-function: ease;
+  }
+  &._show{
+    .modal-inner-wrap{
+      transform: translateY(0);
+    }
+  }
+}
+
+.modal-slide, 
+.modal-popup{
+    bottom: 0;
+    left: 0;
+    min-width: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    &._show{
+      visibility: visible;
+      transform: translate(0, 0);
+    }
+    .modal-inner-wrap{
+      background: $bliss;
+      opacity: 1;
+    }
+    .action-close{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+}
+
+.modal-custom{
+  .action-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.modals-overlay{
+  background-color: rgba(51,51,51,0.55);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;  
+}
+
+@media (--medium-up){
+  .authentication-wrapper{
+    float: right;
+    margin-top: -60px;
+    max-width: 50%;
+    position: relative;
+    z-index: 1;
+    width: 33.33333333%;
+    text-align: right;
+  }
+  .authentication-dropdown{
+    background-color: #bliss;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+    transition: transform linear .1s, visibility 0s linear .1s;
+    visibility: hidden;
+    width: 100%;
+    &._show{
+      z-index: 100;
+      transform: scale(1, 1);
+      transition: transform linear .1s, visibility 0s linear 0s;
+      visibility: visible;
+    }
+  }
+  .opc-summary-wrapper{
+    .modal-header{
+      .action-close{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (--small){
+  .custom-slide{
+    bottom: 0;
+    left: 0;
+    min-width: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    left: 44px;
+    z-index: 900;
+    .modal-inner-wrap{
+      height: auto;
+      min-height: 100%;
+      overflow-y: auto;
+      position: static;
+      transform: translateX(100%);
+      transition-duration: .3s;
+      transition-property: transform, visibility;
+      transition-timing-function: ease-in-out;
+      width: auto;
+      opacity: 1;
+      pointer-events: auto;
+      background: $gray;
+    }
+    &._show{
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+      overflow-y: auto;
+      visibility: visible;
+      .modal-inner-wrap{
+        transform: translateX(0);
+      }
+    }
   }
 }
