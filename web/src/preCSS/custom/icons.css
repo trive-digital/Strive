@@ -87,20 +87,4 @@ ICONS
       }
     }
   }
-  .switcher-trigger{
-    strong{
-      &:after{
-        position: absolute;
-        right: 0;
-        content: '\25BC';
-      }
-    }
-    &.active{
-      strong{
-        &:after{
-          content: '\25B2';
-        }
-      }
-    }
-  }
 }

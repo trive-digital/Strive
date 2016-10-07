@@ -13,4 +13,16 @@ LINKS
     color: $mine-shaft;
     border-radius: $link-radius;
   }
+  
+  &.create{
+    &.primary{
+      background: $btn-color;
+      color: $btn-font-color;
+      border-radius: $link-radius;
+      transition: background-color 0.25s ease-out, color 0.25s ease-out;
+      &:hover{
+        background: $btn-hover-color;
+      }
+    }
+  }
 }

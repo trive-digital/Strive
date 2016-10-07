@@ -85,7 +85,7 @@ BLOCKS
   
   &.block-customer-login{
     @media (--small){
-      background: $gray;
+      background: $bliss;
     }
     .primary,
     .secondary{
@@ -98,6 +98,14 @@ BLOCKS
     }
   }
   
+}
+
+.modal-content{
+  .block-authentication{
+    .block-customer-login{
+      background: $gray;
+    }
+  }
 }
 
 @media (--small){

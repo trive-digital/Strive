@@ -28,6 +28,7 @@ M2 STYLES
 @import 'custom/icons';
 @import 'custom/links';
 @import 'custom/blocks';
+@import 'custom/forms';
 @import 'custom/modals';
 @import 'custom/nav';
 @import 'custom/grid.css';
@@ -38,4 +39,5 @@ M2 STYLES
 @import 'custom/toolbar';
 @import 'custom/filter';
 @import 'custom/notifications';
+@import 'custom/switchers';
 @import 'custom/checkout';

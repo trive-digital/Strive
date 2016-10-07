@@ -1,0 +1,28 @@
+/*
+
+FORMS
+=====
+*/
+
+@media (--medium-up){
+  .form{
+    &.password.reset, 
+    &.send.confirmation, 
+    &.password.forget, 
+    &.create.account{
+      min-width: 600px;
+      width: 50%;
+    }
+  }
+}
+
+.form{
+  &.create.account{
+    .primary{
+      float: left;
+    }
+    .secondary{
+      float: right;
+    }
+  }
+}

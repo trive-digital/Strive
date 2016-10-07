@@ -1,0 +1,15 @@
+/*
+
+SWITCHERS
+=========
+*/
+
+.switcher{
+  display: inline-block;
+  position: relative;
+  .mage-dropdown-dialog{
+    background: $bliss;
+    position: absolute;
+    z-index: 12;
+  }
+}

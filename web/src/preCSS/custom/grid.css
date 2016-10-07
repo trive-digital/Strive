@@ -147,6 +147,16 @@ body{
     }
   }
   
+  .login-container{
+    lost-utility: clearfix;
+    @media (--medium-up){
+      .block-customer-login,
+      .block-new-customer{
+        lost-column: 1/2;
+      }
+    }
+  }
+  
   footer{
     lost-utility: clearfix;
     .block{

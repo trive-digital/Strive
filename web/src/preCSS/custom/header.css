@@ -12,6 +12,11 @@ HEADER
       display: none;
     }
   }
+  .checkout-index-index{
+    .nav-toggle{
+      display: none;
+    }
+  }
 }
 
 @media (--medium-up){
@@ -27,9 +32,6 @@ HEADER
     }
     .links{
       float: right;
-    }
-    .switcher{
-      float: left;
     }
   }
 }
