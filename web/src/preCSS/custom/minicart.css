@@ -30,7 +30,9 @@ MINICART
       text-align: center;
     }
     .subtitle{
-      display: none;
+      &:not(.empty){
+        display: none;
+      }
     }
     .minicart-items-wrapper{
       .actions{
