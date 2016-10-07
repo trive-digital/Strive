@@ -8,6 +8,7 @@ LINKS
   &.continue,
   &.action-delete,
   &.action-edit{
+    text-align: center;
     background: $gray2;
     border: 1px solid $gray3;
     color: $mine-shaft;
