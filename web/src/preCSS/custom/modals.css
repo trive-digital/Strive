@@ -29,6 +29,36 @@ MODALS
   }
 }
 
+@media (--small){
+  .modal-popup{
+    &.modal-slide{
+      left: 44px;
+      z-index: 900;
+      &._inner-scroll{
+        height: auto;
+        min-height: 100%;
+      }
+      .modal-inner-wrap{
+        margin: 0;
+        max-height: none;
+        height: 100%;
+        overflow-y: auto;
+        position: static;
+        transform: translateX(100%);
+        transition-duration: .3s;
+        transition-property: transform, visibility;
+        transition-timing-function: ease-in-out;
+        width: auto;
+      }
+      &._show{
+        .modal-inner-wrap{
+            transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
 .modal-slide, 
 .modal-popup{
     bottom: 0;
@@ -71,15 +101,6 @@ MODALS
 }
 
 @media (--medium-up){
-  .authentication-wrapper{
-    float: right;
-    margin-top: -60px;
-    max-width: 50%;
-    position: relative;
-    z-index: 1;
-    width: 33.33333333%;
-    text-align: right;
-  }
   .authentication-dropdown{
     background-color: #bliss;
     position: absolute;

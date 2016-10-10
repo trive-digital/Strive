@@ -3,3 +3,7 @@
 SELECTS
 =======
 */
+
+select{
+  background: $select-bg;
+}

@@ -34,6 +34,7 @@ NAVIGATION
           ul{
             position: absolute!important;
             background: $bliss;
+            display: none;
             li{
               display: block;
               ul{
@@ -49,6 +50,8 @@ NAVIGATION
   }
 
 }
+
+/* MOBILE MENU */
 
 @media (--small){
   .nav-sections{

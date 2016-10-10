@@ -8,10 +8,22 @@ button{
   &.action{
     @extend .btn-primary;
     &.clear,
-    &.update{
+    &.update,
+    &.action-select-shipping-item{
         background: $gray2;
         border: 1px solid $gray3;
         color: $mine-shaft;
+    }
+  }
+}
+
+.authentication-wrapper{
+  .action-auth-toggle{
+    background: $bliss;
+    color: $mine-shaft;
+    &:hover{
+      background: $bliss;
+      color: $link-color;
     }
   }
 }

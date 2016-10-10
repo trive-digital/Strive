@@ -123,6 +123,13 @@ BLOCKS
   
 }
 
+.opc-block-summary{
+  background: $gray;
+  .block{
+    background: $gray;
+  }
+}
+
 .modal-content{
   .block-authentication{
     .block-customer-login{

@@ -4,6 +4,8 @@ TABLE
 =====
 */
 
+/* Account */
+
 .account{
   .orders-recent,
   .orders-history,
@@ -33,6 +35,16 @@ TABLE
           }
         }
       }
+    }
+  }
+}
+
+/* Checkout */
+
+#co-shipping-method-form{
+  table{
+    thead{
+      display: none;
     }
   }
 }

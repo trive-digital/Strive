@@ -4,7 +4,7 @@ LINKS
 =====
 */
 
-.action{
+a.action{
   &.continue,
   &.action-delete,
   &.action-edit{

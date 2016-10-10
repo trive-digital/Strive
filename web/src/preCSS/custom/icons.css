@@ -70,6 +70,18 @@ ICONS
   }
 }
 
+.opc-progress-bar{
+  .opc-progress-bar-item{
+    &._active{
+      & > span{
+        &:after{
+          content: '\2713';
+        }
+      }
+    }
+  }
+}
+
 @media (--small){
   nav{
     .parent{

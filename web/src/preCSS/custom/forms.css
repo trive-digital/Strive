@@ -14,6 +14,17 @@ form{
         width: initial;
       }
     }
+    .control{
+      &._with-tooltip{
+        position: relative;
+        input{
+          width: calc(100% - 30px);
+        }
+      }
+    }
+    .note{
+      display: block;
+    }
   }
 }
 

@@ -23,6 +23,7 @@ $mine-shaft: #222;
 $primary-color: #1979c3;
 $error-color: #e02b27;
 $success-color: #006400;
+$progress-color: #ff5501;
 
 /*
 
@@ -93,6 +94,14 @@ $link-radius: 3px;
 
 /*
 
+SELECTS
+=======
+*/
+
+$select-bg: $bliss;
+
+/*
+
 NAVIGATION
 ==========
 */
@@ -109,3 +118,15 @@ $notify-success: $success-color;
 $notify-error: $error-color;
 $success-bg: $light-green;
 $error-bg: $light-red;
+
+/*
+
+BLOCKS
+======
+*/
+
+/* 
+
+TOOLTIPS 
+========
+*/
