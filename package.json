@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "browser-sync": "~2.13.0",
+    "css-mqpacker": "^5.0.1",
+    "cssnano": "^3.7.4",
+    "gulp": "~3.9.1",
+    "gulp-postcss": "~6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "lost": "^7.1.0",
+    "postcss-color-function": "^2.0.1",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^8.1.2",
+    "postcss-mixins": "^5.2.0",
+    "postcss-nested": "~1.0.0",
+    "postcss-responsive-type": "^0.4.0",
+    "postcss-simple-vars": "~3.0.0"
+  }
+}
