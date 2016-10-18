@@ -9,6 +9,7 @@ TABLE
 .account{
   .orders-recent,
   .orders-history,
+  .order-items,
   .reviews{
     table{
       caption{
