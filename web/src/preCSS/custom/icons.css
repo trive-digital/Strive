@@ -22,51 +22,50 @@ ICONS
 
 .towishlist{
   &:after{
-    content: "\2665";
+    content: "wishlist";
   }
 }
 
 .tocompare{
   &:after{
-    content: "\21D4";
+    content: "compare";
   }
 }
 
 .mailto{
   &:after{
-    content: "\2709";
+    content: "mailto";
   }
 }
 
 .sorter-action{
   &.sort-asc{
     &:after{
-      content: "\2B06"
+      content: "up";
     }
   }
   &.sort-desc{
     &:after{
-      content: "\2B07"
+      content: "down";
     }
   }
 }
 
 .previous{
   &:after{
-    content: "\2190";
+    content: "prev";
   }
 }
 
 .next{
   &:after{
-    content: "\2192";
+    content: "next";
   }
 }
 
 .nav-toggle{
   &:before{
-    content: '\2261';
-    font-size: 34px;
+    content: 'menu';
   }
 }
 
@@ -75,7 +74,8 @@ ICONS
     &._active{
       & > span{
         &:after{
-          content: '\2713';
+          /* Check Mark */
+          content: 'v';
         }
       }
     }
@@ -89,11 +89,11 @@ ICONS
         &:after{
           position: absolute;
           right: 0;
-          content: '\25BC';
+          content: 'down';
         }
         &.ui-state-active{
           &:after{
-            content: '\25B2';
+            content: 'up';
           }
         }
       }
