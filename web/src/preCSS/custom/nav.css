@@ -69,10 +69,10 @@ NAVIGATION
           }
         }
         li.level0.has-active, li.level0.active{
-          border-bottom: 3px solid $light-red;
+          border-bottom: 3px solid $error-color;
         }
         li.level0 .submenu .active > a{
-          border-left: 3px solid $light-red;
+          border-left: 3px solid $error-color;
         }
       }
     }
@@ -172,13 +172,13 @@ NAVIGATION
           margin-top: $margin-large;
           & > ul{
             .submenu:not(:first-child) .active > a {
-              border-left: 8px solid $gray3;
+              border-left: 8px solid $error-color;
             }
             & > li{
               border-top: 1px solid $gray3;
               &.has-active{
                 & > a:not(.ui-state-active){
-                 border-left: 8px solid $gray3;
+                 border-left: 8px solid $error-color;
                 }
                }
               a{

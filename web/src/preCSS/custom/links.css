@@ -17,7 +17,12 @@ a.action{
     background: $gray2;
     border: 1px solid $gray3;
     color: $mine-shaft;
+    margin-right: $margin-small;
     border-radius: $link-radius;
+  }
+  
+  &.continue{
+    margin-bottom: $margin-medium;
   }
   
   &.create{
