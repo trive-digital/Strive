@@ -12,7 +12,7 @@ RATINGS
   .rating-result{
     display: inline-block;
     position: relative;
-    width: 93px;
+    width: 70px;
     & > span{
       display: inline-block;
       overflow: hidden;
