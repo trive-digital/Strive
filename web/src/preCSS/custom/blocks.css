@@ -17,7 +17,7 @@ BLOCKS
     #search{
       @media (--medium-up){
           width: 270px;
-          padding: 0 70px 0 0;
+          padding: 0 70px 0 $padding-small;
       }
     }
     .actions{
@@ -87,10 +87,10 @@ BLOCKS
     @media (--small){
       background: $bliss;
     }
-    .primary,
-    .secondary{
-      text-align: right;
-    }
+    /*.primary,*/
+    /*.secondary{*/
+      /*text-align: right;*/
+    /*}*/
     @media (--small){
       .block-title{
           text-align: left;

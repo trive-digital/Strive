@@ -4,6 +4,10 @@ ACCOUNT
 =======
 */
 
+.block-customer-login{
+  margin-bottom: $margin-large;
+}
+
 .account{
   .toolbar{
     .limiter{
@@ -11,4 +15,21 @@ ACCOUNT
       float: right;
     }
   }
+}
+
+.actions-toolbar{
+  margin: $margin-large 0;
+  .primary, .secondary{
+    display: inline-block;
+  }
+  .secondary{
+    padding-left: $padding-large;
+  }
+}
+
+.login-container .fieldset:after {
+  margin-top: $margin-large;
+  content: attr(data-hasrequired);
+  display: block;
+  color: $light-red;
 }

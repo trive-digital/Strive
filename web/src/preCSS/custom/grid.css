@@ -9,7 +9,7 @@ body{
   header{
     & > .panel,
     .header{
-      lost-center: $site-width;
+      lost-center: $site-width 15px;
       @media (--small){
         lost-center: $mobile-site-width;
       }
@@ -40,7 +40,7 @@ body{
   footer,
   .breadcrumbs,
   .nav-sections-items{
-    lost-center: $site-width;
+    lost-center: $site-width 15px;
     @media (--small){
       lost-center: $mobile-site-width;
     }

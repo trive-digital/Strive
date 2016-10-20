@@ -4,32 +4,54 @@ TYPO
 ====
 */
 
+*{
+  margin:0;
+}
+
 html{
 
   font-family: $base-font-family;
-  font-weight: $font-weight-light;
   color: $base-font-color;
-
-  font-size: responsive $min-font-size $max-font-size;
-  font-range: $min-font-range $max-font-range;
-
-  line-height: responsive $min-line-height $max-line-height;
-  line-height-range: $min-line-range $max-line-range;
-
-  letter-spacing: responsive $min-letter-spacing $max-letter-spacing;
-  letter-spacing-range: $min-letter-range $max-letter-range;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6{
-    font-weight: $font-weight-light;
-  }
-
-  strong{
-    font-weight: $font-weight-semibold;
-  }
-
 }
+
+/*Basic typography*/
+
+h1, h1 span{
+  font-size: responsive $min-h1-fs $max-h1-fs;
+  line-height: responsive $min-h1-lh $max-h1-lh;
+  margin-bottom: $h1-margin;
+  font-weight: 300;
+}
+
+@media (--small){
+  h1, h1 span{
+    margin-bottom: calc($h1-margin - 30px);
+  }
+}
+
+.block-title strong{
+  font-size: responsive $min-block-title-fs $max-block-title-fs;
+  line-height: responsive $min-block-title-lh $max-block-title-lh;
+}
+.block-title{
+  margin-bottom: $block-title-margin;
+}
+
+.column.main{
+  padding-bottom: $padding-large;
+}
+
+p, a, div, span, ul, li, label, input, th, td{
+  font-size: responsive $min-basefont-fs $max-basefont-fs;
+  line-height: responsive $min-basefont-lh $max-basefont-lh;
+}
+
+small span, .breadcrumbs a, .breadcrumbs strong{
+  font-size: responsive $min-smallfont-fs $max-smallfont-fs;
+  line-height: responsive $min-smallfont-lh $max-smallfont-lh;
+}
+
+
+
+
+

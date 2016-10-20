@@ -4,6 +4,12 @@ MINICART
 ========
 */
 
+@media (--medium-up){
+  .minicart-wrapper .block-minicart {
+    width: 390px;
+  }
+}
+
 .minicart-wrapper{
   position: relative;
   float: right;
@@ -11,6 +17,9 @@ MINICART
     display: none;
   }
   .block-minicart{
+    padding: $padding-large;
+    border: 1px solid $gray3;
+    box-shadow: 0 3px 3px $gray;
     position: absolute;
     width: 290px;
     top: 20px;
@@ -21,13 +30,20 @@ MINICART
     }
     #btn-minicart-close{
       display: block;
-      margin: 0 0 0 auto;
+      margin: 0 0 $padding-medium auto;
+    }
+    .items-total{
+      float: left;
     }
     .subtotal{
       text-align: right;
     }
     .actions{
       text-align: center;
+      margin: $margin-large 0 $margin-medium;
+      button{
+        width: 100%;
+      }
     }
     .subtitle{
       &:not(.empty){
@@ -35,11 +51,27 @@ MINICART
       }
     }
     .minicart-items-wrapper{
-      .actions{
-        .primary,
-        .secondary{
-          text-align: right;
+      padding: $padding-medium;
+      .item{
+        padding: $padding-large 0;
+        border-bottom: 1px solid $gray3;
+        .product-item-photo{
+          float: left;
+          padding-right: $padding-medium;
         }
+        .product-item-details{
+          padding-left: 88px;
+        }
+        .actions{
+          margin: 0;
+          .primary,
+          .secondary{
+            text-align: right;
+          }
+        }
+      }
+      item:first-child {
+        padding-top: 0;
       }
     }
   }

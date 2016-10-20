@@ -15,6 +15,9 @@ button{
         color: $mine-shaft;
     }
   }
+  &.subscribe{
+     padding: $padding-small $padding-medium;
+   }
 }
 
 .authentication-wrapper{
@@ -27,3 +30,10 @@ button{
     }
   }
 }
+
+@media (--small){
+    .primary, button{
+        width: 100%;
+    }
+}
+

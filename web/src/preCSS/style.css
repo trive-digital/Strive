@@ -45,3 +45,6 @@ M2 STYLES
 @import 'custom/table';
 @import 'custom/cart';
 @import 'custom/checkout';
+@import 'custom/breadcrumbs';
+@import 'custom/inputs';
+@import 'custom/theme';

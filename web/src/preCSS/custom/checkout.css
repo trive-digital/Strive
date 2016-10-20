@@ -4,6 +4,10 @@ CHECKOUT
 ========
 */
 
+#checkout{
+  margin-bottom: $margin-large;
+}
+
 .authentication-wrapper{
   float: right;
   margin-top: -60px;
@@ -34,6 +38,7 @@ CHECKOUT
 /* PROGRESS BAR */
 
 .opc-progress-bar{
+  margin-bottom: $margin-large;
   counter-reset: i;
   .opc-progress-bar-item{
     display: inline-block;
@@ -106,8 +111,13 @@ CHECKOUT
   }
 }
 
+.opc-sidebar{
+  margin: $margin-large 0;
+}
+
 
 .opc-wrapper{
+  margin-bottom: $margin-large;
   .shipping-address-items{
     lost-utility: clearfix;
     .shipping-address-item{
@@ -141,4 +151,49 @@ CHECKOUT
       }
     }
   }
+}
+
+.opc-block-summary{
+  padding: $padding-large;
+  margin-bottom: $margin-large;
+  .minicart-items-wrapper{
+    max-height: 370px;
+    overflow-y: scroll;
+    .product-item{
+      padding: $padding-large 0;
+    }
+    .product-image-container{
+      float: left;
+    }
+    .product-item-details{
+      padding-left: 88px;
+    }
+  }
+}
+
+.payment-method-billing-address{
+  margin-bottom: $margin-large;
+}
+
+.payment-option-title{
+  border-top: 1px solid $gray3;
+  padding: $padding-large 0;
+  margin-top: $margin-large;
+}
+
+/*CHECKOUT HEADLINES*/
+
+$checkout-headline-fs: 26px;
+$checkout-headline-lh: 37px;
+
+.opc-wrapper .step-title,
+.opc-block-shipping-information .shipping-information-title > span,
+.opc-block-summary > .title,
+.checkout-agreements-items .checkout-agreements-item-title{
+  font-size: $checkout-headline-fs;
+  line-height: $checkout-headline-lh;
+  border-bottom: 1px solid $gray3;
+  padding-bottom: $padding-medium;
+  margin-bottom: $margin-large;
+  display: block;
 }

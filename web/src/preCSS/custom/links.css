@@ -5,6 +5,11 @@ LINKS
 */
 
 a.action{
+
+  &.primary{
+    @extend .btn-primary;
+   }
+
   &.continue,
   &.action-delete,
   &.action-edit{

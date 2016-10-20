@@ -6,6 +6,18 @@ FORMS
 
 form{
   .field{
+    margin-bottom: $margin-large;
+    /*text-align: right;*/
+    &:not(.choice){
+      /*.control{*/
+       /*display: inline-block;*/
+       /*width: 70%;*/
+      /*}*/
+      /*label{*/
+        /*display: inline-block;*/
+        /*vertical-align: top;*/
+      /*}*/
+    }
     &.choice{
       input,
       label{
@@ -24,6 +36,15 @@ form{
     }
     .note{
       display: block;
+    }
+  }
+  .field{
+    &.required, &._required{
+      label::after{
+        content: '*';
+        color: $light-red;
+        margin-left: $margin-small;
+      }
     }
   }
 }
