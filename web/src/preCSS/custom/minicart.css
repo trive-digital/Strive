@@ -17,6 +17,7 @@ MINICART
     display: none;
   }
   .block-minicart{
+    display: none;
     padding: $padding-large;
     border: 1px solid $gray3;
     box-shadow: 0 3px 3px $gray;
