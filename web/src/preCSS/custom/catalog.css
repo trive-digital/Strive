@@ -22,3 +22,42 @@ CATALOG
   }
 }
 
+.products-list{
+    .product-item-photo, .product-item-details{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .product-item-details{
+        padding-left: $padding-large;
+    }
+}
+
+.products{
+    margin: $margin-large 0;
+    .product-items{
+        .product-item-name{
+            margin: $margin-small 0;
+            display: block;
+        }
+        .price-box{
+            margin: $margin-medium 0 $margin-large;
+        }
+    }
+}
+
+
+/*Sidebar*/
+
+.filter-subtitle{
+    margin-bottom: $margin-medium;
+    display: block;
+}
+.filter-options-title{
+    margin-bottom: $margin-medium;
+}
+.filter-options-content{
+    margin-bottom: $margin-large;
+    .item{
+        margin-bottom: $margin-small;
+    }
+}

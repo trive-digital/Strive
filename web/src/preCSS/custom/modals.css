@@ -102,7 +102,9 @@ MODALS
 
 @media (--medium-up){
   .authentication-dropdown{
-    background-color: #bliss;
+    padding: $padding-large;
+    background-color: $gray;
+    border: 1px solid $gray3;
     position: absolute;
     text-align: left;
     top: 100%;
@@ -129,6 +131,8 @@ MODALS
 
 @media (--small){
   .custom-slide{
+    padding: $padding-large;
+    background-color: $gray;
     bottom: 0;
     left: 0;
     min-width: 0;
@@ -160,6 +164,20 @@ MODALS
       .modal-inner-wrap{
         transform: translateX(0);
       }
+    }
+  }
+}
+
+/*Remove item from shopping cart*/
+.modal-popup{
+  .modal-inner-wrap{
+    padding: $padding-large;
+    .modal-header{
+      padding: $padding-large 0;
+    }
+    .modal-footer{
+      padding: $padding-large 0;
+      margin: 0;
     }
   }
 }

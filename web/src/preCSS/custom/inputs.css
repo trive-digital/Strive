@@ -1,0 +1,21 @@
+/*
+
+INPUTS
+======
+*/
+
+input, textarea{
+    width: 100%;
+    padding-left: $padding-small;
+}
+
+
+/*QTY*/
+
+input{
+  &.item-qty, &.qty {
+     height: 32px;
+     text-align: center;
+     width: 40px;
+  }
+}

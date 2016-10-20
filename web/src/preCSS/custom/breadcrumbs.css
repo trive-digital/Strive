@@ -1,0 +1,16 @@
+/*
+
+BREADCRUMBS
+===========
+*/
+
+.breadcrumbs{
+  li{
+    a{
+      &:after{
+      content:"\003e";
+      margin: 0 $margin-small;
+      }
+    }
+  }
+}
