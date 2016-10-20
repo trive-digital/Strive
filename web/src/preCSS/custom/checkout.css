@@ -119,8 +119,10 @@ CHECKOUT
 .opc-wrapper{
   margin-bottom: $margin-large;
   .shipping-address-items{
+    margin-bottom: $margin-large;
     lost-utility: clearfix;
     .shipping-address-item{
+      margin-bottom: $margin-medium;
       lost-column: 1/3;
       &.selected-item{
         .action-select-shipping-item{

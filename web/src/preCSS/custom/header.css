@@ -21,28 +21,28 @@ HEADER
 
 @media (--medium-up){
   header{
-    .switcher{
-      .switcher-label{
+    .panel{
+      padding: $padding-small 0;
+      .switcher{
+        .switcher-label{
+          display: none;
+        }
+      }
+      .contentarea,
+      .links .compare{
         display: none;
       }
+      .links{
+        float: right;
+        li{
+          margin-right: $margin-medium;
+        }
+      }
     }
-    .contentarea,
-    .links .compare{
-      display: none;
-    }
-    .links{
-      float: right;
+    .content{
+      padding: $padding-large 0;
     }
   }
 }
 
 
-
-/*Header links*/
-.panel.header{
-  padding-bottom: $padding-small;
-  padding-top: $padding-small;
-.header.links > li{
-  margin-right: $margin-medium;
-}
-}

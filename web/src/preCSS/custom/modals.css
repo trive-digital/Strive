@@ -81,6 +81,9 @@ MODALS
       top: 0;
       right: 0;
     }
+    button{
+      margin-bottom: $margin-medium;
+    }
 }
 
 .modal-custom{
