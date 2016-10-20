@@ -8,7 +8,7 @@ body{
 
   header{
     & > .panel,
-    .header{
+    & > .header{
       lost-center: $site-width 15px;
       @media (--small){
         lost-center: $mobile-site-width;

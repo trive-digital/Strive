@@ -36,6 +36,9 @@ HEADER
         float: right;
         li{
           margin-right: $margin-medium;
+          &:last-child{
+            margin: 0;
+          }
         }
       }
     }
