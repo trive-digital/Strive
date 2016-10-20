@@ -15,9 +15,22 @@ button{
         color: $mine-shaft;
     }
   }
-  &.subscribe{
+  &.close,
+  &.action-close{
+     padding: 0;
+     background: initial;
+     color: $mine-shaft;
+     border: initial;
+     text-align: right;
+     width: initial;
+     &:hover{
+       background: initial;
+     }
+  }
+  &.subscribe,
+  &.search{
      padding: $padding-small $padding-medium;
-   }
+  }
 }
 
 .authentication-wrapper{

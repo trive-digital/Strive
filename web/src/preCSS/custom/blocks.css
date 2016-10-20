@@ -17,7 +17,7 @@ BLOCKS
     #search{
       @media (--medium-up){
           width: 270px;
-          padding: 0 70px 0 $padding-small;
+          padding: 3px 70px 3px $padding-small;
       }
     }
     .actions{

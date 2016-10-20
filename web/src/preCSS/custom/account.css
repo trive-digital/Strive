@@ -31,5 +31,5 @@ ACCOUNT
   margin-top: $margin-large;
   content: attr(data-hasrequired);
   display: block;
-  color: $light-red;
+  color: $error-color;
 }

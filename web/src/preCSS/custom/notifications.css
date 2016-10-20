@@ -5,6 +5,8 @@ NOTIFICATIONS
 */
 
 .message{
+  padding: $padding-medium;
+  margin-bottom: $margin-large;
   &.success{
     color: $notify-success;
     background: $success-bg;
