@@ -34,6 +34,26 @@ CART
             display: inline-block;
             vertical-align: top;
           }
+          .product-image-wrapper{
+            padding: 0!important;
+          }
+        }
+      }
+      .gift-options-cart-item{
+        .action-gift{
+          float: left;
+        }
+        .gift-content{
+          display: none;
+          clear: left;
+          display: none;
+          float: left;
+          text-align: left;
+          width: 100%;
+          &._active{
+            display: table;
+            table-layout: fixed;
+          }
         }
       }
       .qty{

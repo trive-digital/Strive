@@ -12,7 +12,8 @@ a.action{
 
   &.continue,
   &.action-delete,
-  &.action-edit{
+  &.action-edit,
+  &.action-gift{
     text-align: center;
     background: $gray2;
     border: 1px solid $gray3;

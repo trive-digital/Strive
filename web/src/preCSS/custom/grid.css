@@ -121,7 +121,9 @@ body{
           .media{
             lost-column: 5/8;
           }
-          .detailed{
+          .detailed,
+          .related,
+          .upsell{
             lost-column: 1/1;
           }
         }
@@ -144,6 +146,12 @@ body{
             }
             .detailed{
               order: 3;
+            }
+            .related{
+              order: 4;
+            }
+            .upsell{
+              order: 5;
             }
           }
         }
