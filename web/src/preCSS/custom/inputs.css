@@ -10,7 +10,7 @@ input, textarea{
 }
 
 
-/*QTY*/
+/* QTY */
 
 input{
   &.item-qty, &.qty {

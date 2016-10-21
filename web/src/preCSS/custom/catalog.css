@@ -4,7 +4,6 @@ CATALOG
 =======
 */
 
-
 .products-grid{
   lost-utility: clearfix;
   .product-item{
@@ -45,8 +44,7 @@ CATALOG
     }
 }
 
-
-/*Sidebar*/
+/* Sidebar */
 
 .filter-subtitle{
     margin-bottom: $margin-medium;

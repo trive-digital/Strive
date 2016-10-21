@@ -26,7 +26,7 @@ PRODUCT
     &.media{
 
     }
-    /*Tabs */
+    /* Tabs */
     &.detailed{
       margin: $margin-large 0;
       .item{
@@ -63,10 +63,9 @@ PRODUCT
   }
 }
 
-
 @media (--small){
   .product{
-    /*Tabs */
+    /* Tabs */    
     &.detailed{
        margin: $margin-large 0;
       .item{

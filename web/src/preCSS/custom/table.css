@@ -40,12 +40,6 @@ TABLE
   }
 }
 
-table{
-  th,td{
-    padding: $padding-small $padding-medium;
-  }
-}
-
 /* Checkout */
 
 #co-shipping-method-form{
@@ -56,8 +50,8 @@ table{
   }
 }
 
+/* Both cart and checkout */
 
-/*Both cart and checkout*/
 .totals{
   th{
     text-align: left;
@@ -69,7 +63,8 @@ table{
   }
 }
 
-/*Unnecessary table text*/
+/* Unnecessary table text */
+
 .table-caption, .estimate .legend {
   display: none;
 }
