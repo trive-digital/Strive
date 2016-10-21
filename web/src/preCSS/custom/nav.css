@@ -29,6 +29,7 @@ NAVIGATION
     background: $nav-background;
     nav{
       ul{
+        z-index: 1;
         li{
           display: inline-block;
           vertical-align: top;
