@@ -38,7 +38,6 @@ M2 STYLES
 @import 'custom/product';
 @import 'custom/ratings';
 @import 'custom/toolbar';
-@import 'custom/filter';
 @import 'custom/notifications';
 @import 'custom/switchers';
 @import 'custom/account';
@@ -47,5 +46,5 @@ M2 STYLES
 @import 'custom/checkout';
 @import 'custom/breadcrumbs';
 @import 'custom/inputs';
-@import 'custom/theme';
+@import 'custom/swatches';
 @import 'custom/footer';

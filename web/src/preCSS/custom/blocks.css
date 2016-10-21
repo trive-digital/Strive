@@ -149,9 +149,6 @@ BLOCKS
 
 @media (--medium-up){
   .block{
-    .block-title{
-      /*display: none;*/
-    }
     &.block-search{
       label{
         display: none;
