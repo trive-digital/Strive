@@ -4,3 +4,8 @@ INPUTS
 ======
 */
 
+input,
+textarea{
+    width: 100%;
+    padding-left: $padding-small;
+}

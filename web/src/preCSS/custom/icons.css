@@ -13,47 +13,54 @@ ICONS
 .nav-toggle{
     &:after{
       display: inline-block;
-      font-size: 18px;
     }
     span{
       display: none;
     }
 }
 
+.breadcrumbs{
+  a{
+    &:after{
+      content: '>';
+    }
+  }
+}
+
 .towishlist{
   &:after{
-    content: "wishlist";
+    content: 'wishlist';
   }
 }
 
 .tocompare{
   &:after{
-    content: "compare";
+    content: 'compare';
   }
 }
 
 .mailto{
   &:after{
-    content: "mailto";
+    content: 'mailto';
   }
 }
 
 .sorter-action{
   &.sort-asc{
     &:after{
-      content: "up";
+      content: 'up';
     }
   }
   &.sort-desc{
     &:after{
-      content: "down";
+      content: 'down';
     }
   }
 }
 
 .previous{
   &:after{
-    content: "prev";
+    content: 'prev';
   }
 }
 

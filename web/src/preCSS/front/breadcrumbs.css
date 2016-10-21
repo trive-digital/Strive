@@ -9,6 +9,11 @@ BREADCRUMBS
   ul{
     li{
       display: inline-block;
+      a{
+        &:after{
+        margin: 0 $margin-small;
+        }
+      }
     }
   }
 }
