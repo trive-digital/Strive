@@ -15,11 +15,44 @@ ACCOUNT
       float: right;
     }
   }
+  .sidebar-main{
+    .title{
+      display: none;
+    }
+    .content{
+      padding: $padding-medium 0;
+      .account-nav{
+        li{
+          margin-bottom: $margin-small;
+          a,
+          strong{
+            padding: $padding-small $padding-large;
+            display: block;
+            border-left: 3px solid transparent;
+          }
+          a:hover {
+            background: $gray3;
+          }
+        }
+        li.current{
+          a,
+          strong{
+            border-left: 3px solid $gray3;
+          }
+        }
+      }
+    }
+  }
+  .sidebar-additional{
+    margin: $margin-large 0;
+  }
 }
+
 
 .actions-toolbar{
   margin: $margin-large 0;
-  .primary, .secondary{
+  .primary,
+  .secondary{
     display: inline-block;
   }
   .secondary{
