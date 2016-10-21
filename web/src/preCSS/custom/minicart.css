@@ -11,8 +11,13 @@ MINICART
 }
 
 .minicart-wrapper{
+  vertical-align: baseline;
+  margin-left: $margin-medium;
   position: relative;
   float: right;
+  .showcart{
+    vertical-align: -webkit-baseline-middle;
+  }
   .counter-label{
     display: none;
   }
@@ -23,7 +28,7 @@ MINICART
     box-shadow: 0 3px 3px $gray;
     position: absolute;
     width: 290px;
-    top: 20px;
+    top: 30px;
     right: 0;
     z-index: 1;
     .block-title{

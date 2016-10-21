@@ -87,10 +87,6 @@ BLOCKS
     @media (--small){
       background: $bliss;
     }
-    /*.primary,*/
-    /*.secondary{*/
-      /*text-align: right;*/
-    /*}*/
     @media (--small){
       .block-title{
           text-align: left;
@@ -162,4 +158,9 @@ BLOCKS
       }
     }
   }
+}
+
+
+.block-dashboard-info{
+  margin-bottom: $margin-large;
 }
