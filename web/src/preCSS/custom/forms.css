@@ -36,6 +36,12 @@ form{
       }
     }
   }
+  
+  &#co-shipping-method-form{
+    .actions-toolbar{
+      text-align: right;
+    }
+  }
 }
 
 @media (--medium-up){
@@ -58,5 +64,14 @@ form{
     .secondary{
       float: right;
     }
+  }
+}
+
+.login-container{
+  .fieldset:after{
+    margin-top: $margin-large;
+    content: attr(data-hasrequired);
+    display: block;
+    color: $error-color;
   }
 }

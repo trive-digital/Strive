@@ -89,6 +89,27 @@ ICONS
   }
 }
 
+@media (--small){
+  nav{
+    .parent{
+      .level-top{
+        &:after{
+          position: absolute;
+          right: 0;
+          content: 'down';
+        }
+        &.ui-state-active{
+          &:after{
+            content: 'up';
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Ajax loaders */
+
 body{
   & > .loading-mask{
     z-index: 9999;
@@ -112,25 +133,6 @@ body{
       }
       p{
         display: none;
-      }
-    }
-  }
-}
-
-@media (--small){
-  nav{
-    .parent{
-      .level-top{
-        &:after{
-          position: absolute;
-          right: 0;
-          content: 'down';
-        }
-        &.ui-state-active{
-          &:after{
-            content: 'up';
-          }
-        }
       }
     }
   }

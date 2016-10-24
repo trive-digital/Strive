@@ -4,8 +4,6 @@ INPUTS
 ======
 */
 
-/* QTY */
-
 input{
   &.item-qty, &.qty {
      height: 32px;

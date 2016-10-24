@@ -37,22 +37,28 @@ button{
   &.search{
      padding: $padding-small $padding-medium;
   }
+  &#btn-minicart-close{
+    display: block;
+    margin: 0 0 $padding-medium auto;
+  }
 }
 
 .authentication-wrapper{
-  .action-auth-toggle{
-    background: $bliss;
-    color: $mine-shaft;
-    &:hover{
+  button{
+    &.action-auth-toggle{
       background: $bliss;
-      color: $link-color;
+      color: $mine-shaft;
+      &:hover{
+        background: $bliss;
+        color: $link-color;
+      }
     }
   }
 }
 
 @media (--small){
-    .primary, button{
+    .primary,
+    button{
         width: 100%;
     }
 }
-

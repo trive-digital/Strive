@@ -5,7 +5,11 @@ BLOCKS
 */
 
 .block{
+  .block-title{
+    margin-bottom: $block-title-margin;
+  }
   background: $bliss;
+  
   &.block-search{
     @media (--medium-up){
       position: relative;
@@ -72,6 +76,66 @@ BLOCKS
     }
   }
   
+  &.block-minicart{
+    display: none;
+    padding: $padding-large;
+    border: 1px solid $gray3;
+    box-shadow: 0 3px 3px $gray;
+    position: absolute;
+    width: 290px;
+    @media (--medium-up){
+      width: 390px;
+    }
+    top: 30px;
+    right: 0;
+    z-index: 2;
+    .block-title{
+      display: none;
+    }
+    .items-total{
+      float: left;
+    }
+    .subtotal{
+      text-align: right;
+    }
+    .actions{
+      text-align: center;
+      margin: $margin-large 0 $margin-medium;
+      button{
+        width: 100%;
+      }
+    }
+    .subtitle{
+      &:not(.empty){
+        display: none;
+      }
+    }
+    .minicart-items-wrapper{
+      padding: $padding-medium;
+      .item{
+        padding: $padding-large 0;
+        border-bottom: 1px solid $gray3;
+        .product-item-photo{
+          float: left;
+          padding-right: $padding-medium;
+        }
+        .product-item-details{
+          padding-left: 88px;
+        }
+        .actions{
+          margin: 0;
+          .primary,
+          .secondary{
+            text-align: right;
+          }
+        }
+      }
+      item:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+  
   &.newsletter{
     text-align: right;
     .title,
@@ -84,6 +148,7 @@ BLOCKS
   }
   
   &.block-customer-login{
+    margin-bottom: $margin-large;
     @media (--small){
       background: $bliss;
     }
@@ -115,14 +180,6 @@ BLOCKS
         }
       }
     }
-  }
-  
-}
-
-.opc-block-summary{
-  background: $gray;
-  .block{
-    background: $gray;
   }
 }
 
@@ -157,7 +214,41 @@ BLOCKS
   }
 }
 
-
 .block-dashboard-info{
   margin-bottom: $margin-large;
+}
+
+/* OPC Blocks */
+
+.opc-block-summary{
+  background: $gray;
+  padding: $padding-large;
+  margin-bottom: $margin-large;
+  .block{
+    background: $gray;
+  }
+  .minicart-items-wrapper{
+    max-height: 370px;
+    overflow-y: scroll;
+    .product-item{
+      padding: $padding-large 0;
+    }
+    .product-image-container{
+      float: left;
+    }
+    .product-item-details{
+      padding-left: 88px;
+    }
+  }
+}
+
+.opc-block-shipping-information{
+  .ship-to,
+  .ship-via{
+    .shipping-information-title{
+      button{
+        float: right;
+      }
+    }
+  }
 }

@@ -21,7 +21,6 @@ $padding-large: 20px;
 $padding-small: calc($padding-large - 15px);
 $padding-medium: calc($padding-large - 10px);
 
-
 /*
 
 COLORS
@@ -50,11 +49,9 @@ RESPONSIVE TYPE
 $base-font-family: 'Open Sans', sans-serif;
 $base-font-color: $mine-shaft;
 
-/*
+/* Min/max font sizes & line heights */
 
-HEADLINES
-=======================
-*/
+/* Headlines */
 
 $min-h1-fs: 26px;
 $max-h1-fs: 40px;
@@ -62,28 +59,31 @@ $min-h1-lh: 29px;
 $max-h1-lh: 44px;
 $h1-margin: 40px;
 
-
-/*
-
-BASEFONT
-=======================
-*/
+/* Base fonts */
 
 $min-basefont-fs: 14px;
 $max-basefont-fs: 14px;
 $min-basefont-lh: 20px;
 $max-basefont-lh: 20px;
 
-/*
-
-SMALLFONT
-=======================
-*/
+/* Small fonts */
 
 $min-smallfont-fs: 12px;
 $max-smallfont-fs: 12px;
 $min-smallfont-lh: 17px;
 $max-smallfont-lh: 17px;
+
+/* Block fonts */
+
+$min-block-title-fs: 18px;
+$max-block-title-fs: 18px;
+$min-block-title-lh: 26px;
+$max-block-title-lh: 26px;
+
+/* Checkout */
+
+$checkout-headline-fs: 26px;
+$checkout-headline-lh: 37px;
 
 /*
 
@@ -152,8 +152,4 @@ BLOCKS
 ======
 */
 
-$min-block-title-fs: 18px;
-$max-block-title-fs: 18px;
-$min-block-title-lh: 26px;
-$max-block-title-lh: 26px;
 $block-title-margin: 20px;

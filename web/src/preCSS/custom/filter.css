@@ -1,0 +1,21 @@
+/*
+
+FILTER
+======
+*/
+
+.filter-subtitle{
+    margin-bottom: $margin-medium;
+    display: block;
+}
+
+.filter-options-title{
+    margin-bottom: $margin-medium;
+}
+
+.filter-options-content{
+    margin-bottom: $margin-large;
+    .item{
+        margin-bottom: $margin-small;
+    }
+}

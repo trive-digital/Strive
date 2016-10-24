@@ -78,9 +78,7 @@ NAVIGATION
       }
     }
   }
-
 }
-
 
 /* MOBILE MENU */
 
@@ -196,9 +194,6 @@ NAVIGATION
               border-bottom: 1px solid $gray3;
             }
           }
-        }
-        .compare{
-          display: none;
         }
         .header.links, .switcher{
           padding: $padding-large;

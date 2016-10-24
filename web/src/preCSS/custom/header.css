@@ -28,8 +28,7 @@ HEADER
           display: none;
         }
       }
-      .contentarea,
-      .links .compare{
+      .contentarea{
         display: none;
       }
       .links{

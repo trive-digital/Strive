@@ -26,6 +26,7 @@ M2 STYLES
 
 @import 'custom/header';
 @import 'custom/minicart';
+@import 'custom/filter';
 @import 'custom/icons';
 @import 'custom/links';
 @import 'custom/blocks';
@@ -36,6 +37,7 @@ M2 STYLES
 @import 'custom/buttons';
 @import 'custom/catalog';
 @import 'custom/product';
+@import 'custom/product-tabs';
 @import 'custom/ratings';
 @import 'custom/toolbar';
 @import 'custom/notifications';
@@ -43,6 +45,7 @@ M2 STYLES
 @import 'custom/account';
 @import 'custom/table';
 @import 'custom/cart';
+@import 'custom/opc-progress-bar';
 @import 'custom/checkout';
 @import 'custom/inputs';
 @import 'custom/swatches';

@@ -38,3 +38,7 @@ a.action{
     }
   }
 }
+
+.no-display{
+  display: none;
+}

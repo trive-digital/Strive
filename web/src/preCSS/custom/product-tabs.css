@@ -1,0 +1,72 @@
+/*
+
+PRODUCT TABS
+============
+*/
+
+@media (--medium-up){
+  .product{
+    &.detailed{
+      margin: $margin-large 0;
+      .item{
+        &.title{
+          margin-right: $margin-small;
+          float: left;
+          width: auto;
+          position: relative;
+          a{
+            background: $gray2;
+            border: 1px solid $gray3;
+            padding: $padding-small $padding-large;
+            display: block;
+          }
+        }
+        &.title.active{
+          a{
+            background: $bliss;
+            border-bottom: 1px solid $bliss;
+            padding-bottom: $padding-small + 1px;
+          }
+        }
+        &.content{
+          float: right;
+          margin: 31px 0 0 -100%;
+          width: 100%;
+          text-align: left;
+          margin-top: $margin-large + 1px;
+          padding: $padding-large;
+          border-top: 1px solid $gray3;
+        }
+      }
+    }
+  }
+}
+
+@media (--small){
+  .product{  
+    &.detailed{
+       margin: $margin-large 0;
+      .item{
+        &.title{
+          margin-bottom: $margin-small;
+           a{
+             padding: $padding-small $padding-large;
+             border: 1px solid $gray3;
+             display: block;
+             background: $gray2;
+           }
+        }
+        &.title.active{
+           a{
+             background: $bliss;
+           }
+        }
+        &.content{
+           border: 1px solid $gray3;
+           margin: 0 0 $margin-small;
+           padding: $padding-large;
+        }
+      }
+    }
+  }
+}

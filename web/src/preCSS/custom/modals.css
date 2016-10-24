@@ -10,6 +10,7 @@ MODALS
   overflow-y: auto;
   .modal-inner-wrap{
     margin: 5rem auto;
+    padding: $padding-large;
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -21,6 +22,13 @@ MODALS
     transition-duration: .2s;
     transition-property: transform, visibility;
     transition-timing-function: ease;
+    .modal-header{
+      padding: $padding-large 0;
+    }
+    .modal-footer{
+      padding: $padding-large 0;
+      margin: 0;
+    }
   }
   &._show{
     .modal-inner-wrap{
@@ -133,9 +141,26 @@ MODALS
 }
 
 @media (--small){
+  body{
+    &._has-modal-custom{
+      .modal-custom-overlay{
+        background-color: rgba(51,51,51,0.55);
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 899;
+      }
+    }
+  }
   .custom-slide{
-    padding: $padding-large;
-    background-color: $gray;
+    .modal-inner-wrap{
+      background-color: $gray;
+    }
+    .block-customer-login{
+      padding: $padding-large;
+    }
     bottom: 0;
     left: 0;
     min-width: 0;
@@ -167,20 +192,6 @@ MODALS
       .modal-inner-wrap{
         transform: translateX(0);
       }
-    }
-  }
-}
-
-/*Remove item from shopping cart*/
-.modal-popup{
-  .modal-inner-wrap{
-    padding: $padding-large;
-    .modal-header{
-      padding: $padding-large 0;
-    }
-    .modal-footer{
-      padding: $padding-large 0;
-      margin: 0;
     }
   }
 }
