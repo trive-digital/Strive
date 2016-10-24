@@ -209,6 +209,16 @@ body{
         display: inline-block;
         vertical-align: top;
       }
+      &.newsletter{
+        @media (--small){
+          .newsletter{
+            width: 70%;
+          }
+          .actions{
+            width: 28%;
+          }
+        }
+      }
     }
     .links{
       lost-column: 1/2 0;
@@ -266,13 +276,26 @@ body{
   }
   
   .products-list{
-      .product-item-photo,
-      .product-item-details{
-          display: inline-block;
-          vertical-align: top;
+    lost-utility: clearfix;
+    .product-item-photo,
+    .product-item-details{
+        display: inline-block;
+        vertical-align: top;
+    }
+    @media (--small){
+      .product-item-photo{
+        lost-column: 1/3;
+        img{
+          width: 100%;
+          height: auto;
+        }
       }
       .product-item-details{
-          padding-left: $padding-large;
+        lost-column: 2/3;
       }
+    }
+    .product-item-details{
+        padding-left: $padding-large;
+    }
   }
 }

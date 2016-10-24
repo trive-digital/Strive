@@ -37,6 +37,12 @@ form{
     }
   }
   
+  &#wishlist-view-form{
+    .tocart{
+      margin-top: $margin-medium;
+    }
+  }
+  
   &#co-shipping-method-form{
     .actions-toolbar{
       text-align: right;
@@ -73,5 +79,14 @@ form{
     content: attr(data-hasrequired);
     display: block;
     color: $error-color;
+  }
+  @media (--small){
+    .actions-toolbar,
+    .fieldset:after{
+      text-align: center;
+    }
+    .secondary{
+      padding: $padding-medium 0 0 0;
+    }
   }
 }

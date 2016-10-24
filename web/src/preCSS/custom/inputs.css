@@ -12,11 +12,8 @@ input{
   }
   &#newsletter{
     padding: 3px 3px 3px $padding-small;
-    @media (--small){
-      width: 140px;
-    }
     @media (--medium-up){
-      width: 200px;
+      width: 240px;
     }
   }
 }
