@@ -1,0 +1,21 @@
+/*
+
+LINKS
+=====
+*/
+
+a.action{
+
+  &.primary{
+    @mixin btn-primary;
+  }
+
+  &.continue,
+  &.action-delete,
+  &.action-edit,
+  &.action-gift,
+  &.action-towishlist{
+    @mixin btn-secondary;
+  }
+
+}

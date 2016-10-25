@@ -7,9 +7,11 @@ HEADER
 @media (--small){
   header{
     .links,
-    .contentarea,
     .switcher{
       display: none;
+    }
+    .contentarea{
+      @mixin invisible;
     }
   }
   .checkout-index-index{
@@ -25,11 +27,11 @@ HEADER
       padding: $padding-small 0;
       .switcher{
         .switcher-label{
-          display: none;
+          @mixin invisible;
         }
       }
       .contentarea{
-        display: none;
+        @mixin invisible;
       }
       .links{
         float: right;

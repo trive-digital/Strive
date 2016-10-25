@@ -23,7 +23,7 @@ TABLE
   .reviews{
     table{
       caption{
-        display: none;
+        @mixin invisible;
       }
       thead{
         th{
@@ -89,6 +89,10 @@ TABLE
 #shopping-cart-table{
   & > caption{
     display: none;
+  }
+  .col{
+    padding-top: $padding-large;
+    vertical-align: top;
   }
   thead{
     tr{
@@ -234,14 +238,6 @@ TABLE
   }
 }
 
-/* Unnecessary table text */
-
-.table-caption,
 .estimate .legend{
-  display: none;
-}
-
-.cart.table-wrapper .col{
-  padding-top: $padding-large;
-  vertical-align: top;
+  @mixin invisible;
 }

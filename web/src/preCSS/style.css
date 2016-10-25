@@ -5,18 +5,19 @@ STRIVE - PostCSS Magento 2 system
 */
 
 @import 'settings';
-@import 'front/links';
-@import 'front/inputs';
-@import 'front/buttons';
-@import 'front/forms';
-@import 'front/selects';
-@import 'front/reset';
-@import 'front/box-sizing';
-@import 'front/typo';
-@import 'front/breadcrumbs';
-@import 'front/toolbar';
-@import 'front/table';
-@import 'front/tooltip';
+
+@import 'lib/links';
+@import 'lib/inputs';
+@import 'lib/buttons';
+@import 'lib/forms';
+@import 'lib/selects';
+@import 'lib/reset';
+@import 'lib/box-sizing';
+@import 'lib/typo';
+@import 'lib/breadcrumbs';
+@import 'lib/toolbar';
+@import 'lib/table';
+@import 'lib/visibility';
 
 /*
 
@@ -24,28 +25,30 @@ M2 STYLES
 =========
 */
 
-@import 'custom/header';
-@import 'custom/minicart';
-@import 'custom/filter';
-@import 'custom/icons';
-@import 'custom/links';
-@import 'custom/blocks';
-@import 'custom/forms';
-@import 'custom/modals';
-@import 'custom/nav';
-@import 'custom/grid.css';
-@import 'custom/buttons';
-@import 'custom/catalog';
-@import 'custom/product';
-@import 'custom/product-tabs';
-@import 'custom/ratings';
-@import 'custom/toolbar';
-@import 'custom/notifications';
-@import 'custom/switchers';
-@import 'custom/account';
-@import 'custom/table';
-@import 'custom/cart';
-@import 'custom/opc-progress-bar';
-@import 'custom/checkout';
-@import 'custom/inputs';
-@import 'custom/swatches';
+@import 'theme/grid.css';
+@import 'theme/typo';
+@import 'theme/header';
+@import 'theme/minicart';
+@import 'theme/filter';
+@import 'theme/icons';
+@import 'theme/links';
+@import 'theme/blocks';
+@import 'theme/forms';
+@import 'theme/modals';
+@import 'theme/nav';
+@import 'theme/buttons';
+@import 'theme/catalog';
+@import 'theme/product';
+@import 'theme/product-tabs';
+@import 'theme/ratings';
+@import 'theme/toolbar';
+@import 'theme/notifications';
+@import 'theme/switchers';
+@import 'theme/account';
+@import 'theme/table';
+@import 'theme/cart';
+@import 'theme/opc-progress-bar';
+@import 'theme/checkout';
+@import 'theme/inputs';
+@import 'theme/swatches';
+@import 'theme/tooltip';

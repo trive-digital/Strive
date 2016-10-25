@@ -13,8 +13,4 @@ TOOLBAR
     display: inline-block;
     vertical-align: top;
   }
-  #modes-label,
-  .label{
-    display: none;
-  }
 }

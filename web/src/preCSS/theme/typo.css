@@ -1,13 +1,8 @@
 /*
 
-TYPO
-====
+TYPOGRAPHY
+==========
 */
-
-html{
-  font-family: $base-font-family;
-  color: $base-font-color;
-}
 
 h1, 
 h1 span{

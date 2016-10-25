@@ -6,7 +6,7 @@ BUTTONS
 
 button{
   &.action{
-    @extend .btn-primary;
+    @mixin btn-primary;
     &.clear,
     &.update,
     &.action-select-shipping-item{
@@ -21,17 +21,14 @@ button{
       }
     }
   }
+  &.action-secondary,
+  &.action-primary{
+    @mixin btn-secondary;
+  }
   &.close,
-  &.action-close{
-     padding: 0;
-     background: initial;
-     color: $mine-shaft;
-     border: initial;
-     text-align: right;
-     width: initial;
-     &:hover{
-       background: initial;
-     }
+  &.action-close,
+  &.action-auth-toggle{
+     @mixin btn-close;
   }
   &.subscribe,
   &.search{
@@ -40,19 +37,6 @@ button{
   &#btn-minicart-close{
     display: block;
     margin: 0 0 $padding-medium auto;
-  }
-}
-
-.authentication-wrapper{
-  button{
-    &.action-auth-toggle{
-      background: $bliss;
-      color: $mine-shaft;
-      &:hover{
-        background: $bliss;
-        color: $link-color;
-      }
-    }
   }
 }
 

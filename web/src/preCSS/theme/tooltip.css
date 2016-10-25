@@ -24,6 +24,8 @@ TOOLTIP
   .field-tooltip-content{
     width: 270px;
     display: none;
+    background: $gray;
+    border: 1px solid $gray3;
     left: 38px;
     @media (--small){
       left: initial;

@@ -15,6 +15,10 @@ TOOLBAR
       .sorter{
         float: right;
       }
+      #modes-label,
+      .label{
+        @mixin invisible;
+      }
   }
   .products{
     & + .toolbar{
@@ -47,6 +51,10 @@ TOOLBAR
     }
     .sorter{
       float: right;
+    }
+    #modes-label,
+    .label{
+      @mixin invisible;
     }
   }
   .products{

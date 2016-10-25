@@ -1,0 +1,10 @@
+/*
+
+TYPOGRAPHY
+==========
+*/
+
+html{
+  font-family: $base-font-family;
+  color: $base-font-color;
+}
