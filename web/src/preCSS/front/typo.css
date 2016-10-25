@@ -57,3 +57,8 @@ small span,
   font-size: $checkout-headline-fs;
   line-height: $checkout-headline-lh;
 }
+
+.fieldset > .field > .label, 
+.fieldset > .fields > .field > .label{
+  font-weight: 700;
+}

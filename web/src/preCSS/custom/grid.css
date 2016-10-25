@@ -145,6 +145,11 @@ body{
               lost-column: 3/8 0;
             }
           }
+          .bundle-options-container{
+              .product-add-form{
+                display: none;
+              }
+          }
         }
       }
     }
@@ -164,7 +169,8 @@ body{
             .product-info-main{
               order: 2;
             }
-            .product-add-form{
+            .product-add-form,
+            .bundle-options-container{
               order: 3;
             }
             .detailed{
@@ -175,6 +181,11 @@ body{
             }
             .upsell{
               order: 6;
+            }
+            .bundle-options-container{
+                .product-add-form{
+                  display: none;
+                }
             }
           }
         }
