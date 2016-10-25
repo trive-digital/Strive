@@ -10,17 +10,10 @@ PostCSS Magento 2 system.
 
 ## Installation
 
-1. Clone this repository under Magento /app/design/frontend/Trive/blank folder & [StriveGulpTool](https://github.com/trive-digital/StriveGulpTool) inside Magento_root/StriveGulpTool folder.
+1. Install via Composer: `composer require trive/theme-frontend-strive` or clone this repository under Magento /app/design/frontend/Trive/blank folder & [StriveGulpTool](https://github.com/trive-digital/StriveGulpTool) inside Magento_root/strive-gulp folder. 
 2. `bin/magento setup:upgrade`
 3. `bin/magento setup:static-content:deploy`
-4. Install node_modules with `npm install`
-5. Set up Gulp file paths inside gulpfile. 
-
-Via Composer
-1. `composer require`
-2. `bin/magento setup:upgrade`
-3. `bin/magento setup:static-content:deploy`
-4. Install node_modules with `npm install`
+4. Install node_modules with `npm install` inside strive-gulp folder
 5. Set up Gulp file paths inside gulpfile. 
 
 ## Features & Usage
