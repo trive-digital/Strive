@@ -1,0 +1,10 @@
+{
+  "name": "trive/theme-frontend-strive",
+  "description": "PostCSS Magento 2 system",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "require": {
+    "trive/strive-gulp": "1.0.0"
+  }
+}
