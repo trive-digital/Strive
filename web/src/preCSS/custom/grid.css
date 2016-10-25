@@ -130,10 +130,20 @@ body{
           .media{
             lost-column: 5/8;
           }
+          .product-add-form,
           .detailed,
           .related,
           .upsell{
             lost-column: 1/1;
+          }
+          .product-add-form{
+            lost-utility: clearfix;
+            .product-options-wrapper{
+              lost-column: 5/8 0;
+            }
+            .product-options-bottom{
+              lost-column: 3/8 0;
+            }
           }
         }
       }
@@ -144,7 +154,8 @@ body{
             display: flex;
             flex-direction: column;
             .media,
-            .product-info-main{
+            .product-info-main,
+            .product-add-form{
               lost-column: 1 0;
             }
             .media{
@@ -153,14 +164,17 @@ body{
             .product-info-main{
               order: 2;
             }
-            .detailed{
+            .product-add-form{
               order: 3;
             }
-            .related{
+            .detailed{
               order: 4;
             }
-            .upsell{
+            .related{
               order: 5;
+            }
+            .upsell{
+              order: 6;
             }
           }
         }

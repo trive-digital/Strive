@@ -55,6 +55,35 @@ TABLE
   }
 }
 
+/* Product */
+
+.grouped{
+  table{
+    @media (--small){
+      thead{
+        display: none;
+      }
+      tbody{
+        tr{
+          td{
+            display: block;
+            &:before{
+              padding-right: 10px;
+              content: attr(data-th) ': ';
+              display: inline-block;
+              color: #111;
+              font-weight: 700;
+            }
+            strong{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Cart */
 
 #shopping-cart-table{
