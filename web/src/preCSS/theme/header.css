@@ -1,0 +1,50 @@
+/*
+
+HEADER
+======
+*/
+
+@media (--small){
+  header{
+    .links,
+    .switcher{
+      display: none;
+    }
+    .contentarea{
+      @mixin invisible;
+    }
+  }
+  .checkout-index-index{
+    .nav-toggle{
+      display: none;
+    }
+  }
+}
+
+@media (--medium-up){
+  header{
+    .panel{
+      padding: $padding-small 0;
+      .switcher{
+        .switcher-label{
+          @mixin invisible;
+        }
+      }
+      .contentarea{
+        @mixin invisible;
+      }
+      .links{
+        float: right;
+        li{
+          margin-right: $margin-medium;
+          &:last-child{
+            margin: 0;
+          }
+        }
+      }
+    }
+    .content{
+      padding: $padding-large 0;
+    }
+  }
+}

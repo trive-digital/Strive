@@ -1,0 +1,92 @@
+/*
+
+FORMS
+=====
+*/
+
+form{
+  .field{
+    margin-bottom: $margin-large;
+    &.choice{
+      input,
+      label{
+        display: inline-block;
+        vertical-align: middle;
+        width: initial;
+      }
+    }
+    .control{
+      &._with-tooltip{
+        position: relative;
+        input{
+          width: calc(100% - 30px);
+        }
+      }
+    }
+    .note{
+      display: block;
+    }
+  }
+  .field{
+    &.required, &._required{
+      label::after{
+        content: '*';
+        color: $error-color;
+        margin-left: $margin-small;
+      }
+    }
+  }
+  
+  &#wishlist-view-form{
+    .tocart{
+      margin-top: $margin-medium;
+    }
+  }
+  
+  &#co-shipping-method-form{
+    .actions-toolbar{
+      text-align: right;
+    }
+  }
+}
+
+@media (--medium-up){
+  .form{
+    &.password.reset, 
+    &.send.confirmation, 
+    &.password.forget, 
+    &.create.account{
+      min-width: 600px;
+      width: 50%;
+    }
+  }
+}
+
+.form{
+  &.create.account{
+    .primary{
+      float: left;
+    }
+    .secondary{
+      float: right;
+    }
+  }
+}
+
+.login-container{
+  .fieldset:after{
+    margin-top: $margin-large;
+    content: attr(data-hasrequired);
+    display: block;
+    color: $error-color;
+  }
+  @media (--small){
+    .actions-toolbar,
+    .fieldset:after{
+      text-align: center;
+    }
+    .secondary{
+      padding: $padding-medium 0 0 0;
+    }
+  }
+}

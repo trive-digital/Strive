@@ -1,0 +1,19 @@
+/*
+
+INPUTS
+======
+*/
+
+input{
+  &.item-qty, &.qty {
+     height: 32px;
+     text-align: center;
+     width: 40px;
+  }
+  &#newsletter{
+    padding: 3px 3px 3px $padding-small;
+    @media (--medium-up){
+      width: 240px;
+    }
+  }
+}

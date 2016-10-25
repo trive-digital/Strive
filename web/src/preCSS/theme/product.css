@@ -1,0 +1,27 @@
+/*
+
+PRODUCT
+=======
+*/
+
+.product-info-main{
+  .product-info-stock-sku{
+    text-transform: uppercase;
+    .stock{
+      margin-right: $margin-large;
+    }
+    div{
+      display: inline-block;
+    }
+  }
+  .price-box{
+    margin-top: $margin-medium;
+  }
+  .swatch-opt{
+    margin: $margin-medium 0;
+  }
+}
+
+.product-reviews-summary{
+  margin: $margin-medium 0;
+}

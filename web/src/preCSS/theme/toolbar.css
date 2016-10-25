@@ -1,0 +1,86 @@
+/*
+
+TOOLBAR
+=======
+*/
+
+@media (--small){
+  .toolbar{
+      margin-bottom: $margin-large;
+      .modes,
+      .limiter,
+      .pages{
+        display: none;
+      }
+      .sorter{
+        float: right;
+      }
+      #modes-label,
+      .label{
+        @mixin invisible;
+      }
+  }
+  .products{
+    & + .toolbar{
+      .pages{
+        display: block;
+        text-align: center;
+        ul{
+          li{
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+      .toolbar-amount{
+        display: none;
+      }
+      .sorter{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (--medium-up){
+  .toolbar{
+    margin-bottom: $margin-large;
+    .limiter,
+    .pages{
+      display: none;
+    }
+    .sorter{
+      float: right;
+    }
+    #modes-label,
+    .label{
+      @mixin invisible;
+    }
+  }
+  .products{
+    & + .toolbar{
+      .sorter,
+      .modes,
+      .toolbar-amount{
+        display: none;
+      }
+      .pages{
+        display: inline-block;
+        ul{
+          li{
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+      .limiter{
+        display: inline-block;
+        float: right;
+        .control,
+        .limiter-text{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

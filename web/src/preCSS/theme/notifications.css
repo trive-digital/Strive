@@ -1,0 +1,22 @@
+/*
+
+NOTIFICATIONS
+=============
+*/
+
+.message{
+  padding: $padding-medium;
+  margin-bottom: $margin-large;
+  &.success{
+    color: $notify-success;
+    background: $success-bg;
+  }
+  &.error{
+    color: $notify-error;
+    background: $error-bg;
+  }
+}
+
+.mage-error{
+  color: $error-color;
+}

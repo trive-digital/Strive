@@ -1,0 +1,48 @@
+/*
+
+BUTTONS
+=======
+*/
+
+button{
+  &.action{
+    @mixin btn-primary;
+    &.clear,
+    &.update,
+    &.action-select-shipping-item{
+        background: $gray2;
+        border: 1px solid $gray3;
+        color: $mine-shaft;
+        margin-bottom: $margin-medium;
+    }
+    @media (--medium-up){
+      &.update{
+        margin-right: $margin-medium;
+      }
+    }
+  }
+  &.action-secondary,
+  &.action-primary{
+    @mixin btn-secondary;
+  }
+  &.close,
+  &.action-close,
+  &.action-auth-toggle{
+     @mixin btn-close;
+  }
+  &.subscribe,
+  &.search{
+     padding: $padding-small $padding-medium;
+  }
+  &#btn-minicart-close{
+    display: block;
+    margin: 0 0 $padding-medium auto;
+  }
+}
+
+@media (--small){
+    .primary,
+    button{
+        width: 100%;
+    }
+}

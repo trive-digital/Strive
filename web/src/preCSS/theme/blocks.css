@@ -1,0 +1,254 @@
+/*
+
+BLOCKS
+======
+*/
+
+.block{
+  .block-title{
+    margin-bottom: $block-title-margin;
+  }
+  background: $bliss;
+  
+  &.block-search{
+    @media (--medium-up){
+      position: relative;
+    }
+    float: right;
+    .block-title{
+      display: none;
+    }
+    #search{
+      @media (--medium-up){
+          width: 270px;
+          padding: 3px 70px 3px $padding-small;
+      }
+    }
+    .actions{
+      .action{
+        position: absolute;
+        top: 0;
+        right: 0;
+        &.search[disabled]{
+          cursor: not-allowed;
+          pointer-events: none;
+          opacity: .5;
+        }
+      }
+    }
+    @media (--small){
+      float: initial;
+      .field{
+        &.search{
+          .advanced{
+            display: none;
+          }
+          .control{
+            input{
+              width: 100%;
+              position: absolute;
+              left: -300%;
+              padding: 0;
+            }
+          }
+          label{
+            span{
+              display: block;
+              position: absolute;
+              top: 0;
+              right: 80px;
+            }
+            &.active{
+              & + .control{
+                input{
+                  position: static;
+                }
+              }
+            }
+          }
+        }
+      }
+      .actions{
+        .search{
+          display: none;
+        }
+      }
+    }
+  }
+  
+  &.block-minicart{
+    display: none;
+    padding: $padding-large;
+    border: 1px solid $gray3;
+    box-shadow: 0 3px 3px $gray;
+    position: absolute;
+    width: 290px;
+    @media (--medium-up){
+      width: 390px;
+    }
+    top: 30px;
+    right: 0;
+    z-index: 2;
+    .block-title{
+      display: none;
+    }
+    .items-total{
+      float: left;
+    }
+    .subtotal{
+      text-align: right;
+    }
+    .actions{
+      text-align: center;
+      margin: $margin-large 0 $margin-medium;
+      button{
+        width: 100%;
+      }
+    }
+    .subtitle{
+      &:not(.empty){
+        display: none;
+      }
+    }
+    .minicart-items-wrapper{
+      padding: $padding-medium;
+      .item{
+        padding: $padding-large 0;
+        border-bottom: 1px solid $gray3;
+        .product-item-photo{
+          float: left;
+          padding-right: $padding-medium;
+        }
+        .product-item-details{
+          padding-left: 88px;
+        }
+        .actions{
+          margin: 0;
+          .primary,
+          .secondary{
+            text-align: right;
+          }
+        }
+      }
+      item:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+  
+  &.newsletter{
+    text-align: right;
+    .title,
+    label{
+      display: none;
+    }
+    @media (--small){
+      text-align: left;
+    }
+  }
+  
+  &.block-customer-login{
+    margin-bottom: $margin-large;
+    @media (--small){
+      background: $bliss;
+    }
+    @media (--small){
+      .block-title{
+          text-align: left;
+      }
+    }
+  }
+  
+  &.account-nav{
+    background: $gray;
+  }
+  
+  &.block-reorder{
+    ol{
+      li{
+        .item{
+          display: inline-block;
+          vertical-align: middle;
+          width: 1rem;
+          .label{
+            display: none;
+          }
+        }
+        .product-item-name{
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.modal-content{
+  .block-authentication{
+    .block-customer-login{
+      background: $gray;
+    }
+  }
+}
+
+@media (--small){
+  .block{
+    &.filter{
+      .block-title{
+
+      }
+      .block-content{
+        display: block;
+      }
+    }
+  }
+}
+
+@media (--medium-up){
+  .block{
+    &.block-search{
+      label{
+        display: none;
+      }
+    }
+  }
+}
+
+.block-dashboard-info{
+  margin-bottom: $margin-large;
+}
+
+/* OPC Blocks */
+
+.opc-block-summary{
+  background: $gray;
+  padding: $padding-large;
+  margin-bottom: $margin-large;
+  .block{
+    background: $gray;
+  }
+  .minicart-items-wrapper{
+    max-height: 370px;
+    overflow-y: scroll;
+    .product-item{
+      padding: $padding-large 0;
+    }
+    .product-image-container{
+      float: left;
+    }
+    .product-item-details{
+      padding-left: 88px;
+    }
+  }
+}
+
+.opc-block-shipping-information{
+  .ship-to,
+  .ship-via{
+    .shipping-information-title{
+      button{
+        float: right;
+      }
+    }
+  }
+}

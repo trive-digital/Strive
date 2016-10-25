@@ -1,0 +1,204 @@
+/*
+
+NAVIGATION
+==========
+*/
+
+@media (--medium-up){
+  .nav-toggle,
+  .nav-sections-item-title{
+    display: none;
+  }
+  .nav-sections{
+    margin-bottom: $margin-large;
+    .section-item-content{
+      display: block!important;
+        .links,
+        .switcher{
+          display: none;
+        }
+        nav{
+          display: block!important;
+        }
+    }
+  }
+
+  /* DESKTOP MENU */
+
+  .nav-sections{
+    background: $nav-background;
+    nav{
+      ul{
+        z-index: 1;
+        li{
+          display: inline-block;
+          vertical-align: top;
+          ul{
+            position: absolute!important;
+            background: $bliss;
+            display: none;
+            li{
+              display: block;
+              ul{
+                position: absolute;
+                top: 0!important;
+                left: 100%!important;
+              }
+            }
+          }
+        }
+        li.level0{
+          margin-right: $margin-small;
+          a.level-top{
+            line-height: $top-menu-lh;
+            padding: 0 $padding-small;
+          }
+          .submenu{
+            min-width: 230px;
+            border: 1px solid $gray2;
+            box-shadow: 0 5px 5px $gray3;
+            .ui-menu-item{
+              margin-bottom: $margin-small;
+              a{
+                padding: $padding-small $padding-medium;
+                display: block;
+              }
+              a:hover, a.ui-state-focus{
+                background: $gray;
+              }
+            }
+          }
+        }
+        li.level0.has-active, li.level0.active{
+          border-bottom: 3px solid $error-color;
+        }
+        li.level0 .submenu .active > a{
+          border-left: 3px solid $error-color;
+        }
+      }
+    }
+  }
+}
+
+/* MOBILE MENU */
+
+@media (--small){
+  .nav-sections{
+    .nav-sections-items{
+      padding: 0;
+    }
+    -webkit-overflow-scrolling: touch;
+    transition: left 0.3s;
+    height: 100%;
+    left: -80%;
+    left: calc(-1 * (100% - 54px));
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    width: calc(100% - 54px);
+    background: $bliss;
+  }
+  .nav-before-open{
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    body{
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+    }
+    .page-wrapper{
+      transition: left 0.3s;
+      height: 100%;
+      left: 0;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  .nav-toggle{
+    cursor: pointer;
+  }
+  .nav-open{
+    .page-wrapper {
+      left: calc(100% - 54px);
+    }
+    .nav-toggle{
+      &:after{
+        background: rgba(0, 0, 0, 0.8);
+        content: '';
+        display: block;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+      }
+    }
+    .nav-sections{
+      box-shadow: 0 0 5px 0 rgba(50, 50, 50, 0.75);
+      left: 0;
+      z-index: 99;
+      .ui-state-active{
+        & + ul li{
+          & > ul{
+            display: block!important;
+          }
+        }
+      }
+      .section-item-title{
+        float: left;
+        width: 33.33%;
+        height: 70px;
+        text-align: center;
+        padding-top: $padding-large;
+        background-color: $gray2;
+        border: solid $gray3;
+        border-width: 0 0 1px 1px;
+      }
+      .section-item-title.active{
+        background-color: transparent;
+        border-bottom: 0;
+      }
+      .section-item-content{
+        float: right;
+        margin-left: -100%;
+        width: 100%;
+        margin-top: 70px;
+        nav{
+          margin-top: $margin-large;
+          & > ul{
+            .submenu:not(:first-child) .active > a {
+              border-left: 8px solid $error-color;
+            }
+            & > li{
+              border-top: 1px solid $gray3;
+              &.has-active{
+                & > a:not(.ui-state-active){
+                 border-left: 8px solid $error-color;
+                }
+               }
+              a{
+                padding: $padding-medium $padding-large;
+                display: block;
+                text-transform: uppercase;
+              }
+              & > ul{
+                  top: auto!important;
+                  margin-left: $margin-medium;
+              }
+            }
+            li:last-child {
+              border-bottom: 1px solid $gray3;
+            }
+          }
+        }
+        .header.links, .switcher{
+          padding: $padding-large;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+/*
+
+TOOLBAR
+=======
+*/
+
+.toolbar{
+  .modes,
+  .toolbar-amount,
+  .pages,
+  .limiter,
+  .sorter{
+    display: inline-block;
+    vertical-align: top;
+  }
+}

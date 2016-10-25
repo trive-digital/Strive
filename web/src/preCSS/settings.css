@@ -9,6 +9,20 @@ $mobile-site-width: 100%;
 
 /*
 
+SPACERS
+======
+*/
+
+$margin-large: 20px;
+$margin-small: calc($margin-large - 15px);
+$margin-medium: calc($margin-large - 10px);
+
+$padding-large: 20px;
+$padding-small: calc($padding-large - 15px);
+$padding-medium: calc($padding-large - 10px);
+
+/*
+
 COLORS
 ======
 */
@@ -35,30 +49,41 @@ RESPONSIVE TYPE
 $base-font-family: 'Open Sans', sans-serif;
 $base-font-color: $mine-shaft;
 
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
+/* Min/max font sizes & line heights */
 
-/* min-size, max-size */
+/* Headlines */
 
-$min-font-size: 12px;
-$max-font-size: 16px;
+$min-h1-fs: 26px;
+$max-h1-fs: 40px;
+$min-h1-lh: 29px;
+$max-h1-lh: 44px;
+$h1-margin: 40px;
 
-/* viewport widths between which font-size is fluid */
+/* Base fonts */
 
-$min-font-range: 420px;
-$max-font-range: 1280px;
+$min-basefont-fs: 14px;
+$max-basefont-fs: 14px;
+$min-basefont-lh: 20px;
+$max-basefont-lh: 20px;
 
-$min-line-height: 16px;
-$max-line-height: 20px;
-$min-line-range: 420px;
-$max-line-range: 1280px;
+/* Small fonts */
 
-$min-letter-spacing: 1px;
-$max-letter-spacing: 3px;
-$min-letter-range: 420px;
-$max-letter-range: 1280px;
+$min-smallfont-fs: 12px;
+$max-smallfont-fs: 12px;
+$min-smallfont-lh: 17px;
+$max-smallfont-lh: 17px;
+
+/* Block fonts */
+
+$min-block-title-fs: 18px;
+$max-block-title-fs: 18px;
+$min-block-title-lh: 26px;
+$max-block-title-lh: 26px;
+
+/* Checkout */
+
+$checkout-headline-fs: 26px;
+$checkout-headline-lh: 37px;
 
 /*
 
@@ -81,7 +106,7 @@ $btn-radius: 3px;
 $btn-color: $primary-color;
 $btn-hover-color: color($primary-color l(35%));
 $btn-font-color: $bliss;
-$btn-padding: 4px 10px;
+$btn-padding: 14px 17px;
 
 /*
 
@@ -108,6 +133,7 @@ NAVIGATION
 */
 
 $nav-background: $gray;
+$top-menu-lh: 50px;
 
 /*
 
@@ -126,8 +152,4 @@ BLOCKS
 ======
 */
 
-/* 
-
-TOOLTIPS 
-========
-*/
+$block-title-margin: 20px;

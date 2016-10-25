@@ -1,0 +1,20 @@
+/*
+
+CATALOG
+=======
+*/
+
+.products{
+  margin: $margin-large 0;
+
+  /* List view */
+  .product-items{
+    .product-item-name{
+        margin: $margin-small 0;
+        display: block;
+    }
+    .price-box{
+        margin: $margin-medium 0 $margin-large;
+    }
+  }
+}

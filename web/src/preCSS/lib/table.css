@@ -1,0 +1,12 @@
+/*
+
+TABLE
+=====
+*/
+
+table{
+  width: 100%;
+  th,td{
+    padding: $padding-small $padding-medium;
+  }
+}

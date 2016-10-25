@@ -1,0 +1,40 @@
+/*
+
+TOOLTIP
+=======
+*/
+
+.field-tooltip{
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  &._active{
+      z-index: 100;
+      .field-tooltip-content{
+        display: block;
+      }
+  }
+  .field-tooltip-action{
+    display: inline-block;
+    &:before{
+      content: '?';
+    }
+  }
+  .field-tooltip-content{
+    width: 270px;
+    display: none;
+    background: $gray;
+    border: 1px solid $gray3;
+    left: 38px;
+    @media (--small){
+      left: initial;
+      right: 0;
+    }
+    position: absolute;
+    text-transform: none;
+    top: -9px;
+    word-wrap: break-word;
+    z-index: 2;
+  }
+}

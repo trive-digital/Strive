@@ -1,0 +1,46 @@
+/*
+
+BUTTONS
+=======
+*/
+
+@define-mixin btn-primary{
+  display: inline-block;
+  font: inherit;
+  vertical-align: middle;
+  margin: 0;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  padding: $btn-padding;
+  border-radius: $btn-radius;
+  border: initial;
+  background: $btn-color;
+  color: $btn-font-color;
+  &:hover{
+    background: $btn-hover-color;
+  }
+}
+
+@define-mixin btn-secondary{
+  text-align: center;
+  background: $gray2;
+  border: 1px solid $gray3;
+  color: $mine-shaft;
+  margin: $margin-small 0;
+  border-radius: $link-radius;
+  padding: $padding-small;
+  display: inline-block;
+}
+
+@define-mixin btn-close{
+  padding: 0;
+  background: initial;
+  color: $mine-shaft;
+  border: initial;
+  text-align: right;
+  width: initial;
+  &:hover{
+    background: initial;
+  }
+}

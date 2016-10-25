@@ -1,0 +1,69 @@
+/* 
+
+OPC PROGRESS BAR
+================
+*/
+
+.opc-progress-bar{
+  margin-bottom: $margin-large;
+  counter-reset: i;
+  .opc-progress-bar-item{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 185px;
+    @media (--small){
+      width: 48%;
+    }
+    &:before{
+      background: $gray2;
+      top: 19px;
+      content: '';
+      height: 7px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+    &._active{
+      &:before{
+        background: $progress-color;
+      }
+      & > span{
+        &:before{
+          background: $progress-color;
+        }
+      }
+    }
+    & > span{
+      display: inline-block;
+      padding-top: 45px;
+      width: 100%;
+      word-wrap: break-word;
+      color: $gray3;
+      &:before,
+      &:after{
+        background: $gray2;
+        height: 38px;
+        margin-left: -19px;
+        width: 38px;
+        border-radius: 50%;
+        content: '';
+        left: 50%;
+        position: absolute;
+        top: 0;
+      }
+      &:after{
+        background: $bliss;
+        height: 26px;
+        margin-left: -13px;
+        padding: 3px 0 0 3px;
+        top: 6px;
+        width: 26px;
+        content: counter(i);
+        counter-increment: i;
+        color: $mine-shaft;
+      }
+    }
+  }
+}

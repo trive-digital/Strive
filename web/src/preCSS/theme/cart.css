@@ -1,0 +1,35 @@
+/*
+
+CART
+====
+*/
+
+.cart-summary{
+  .summary.title{
+    margin-bottom: $margin-large;
+    display: block;
+  }
+  background: $gray;
+  margin-bottom: $margin-large;
+  padding: $padding-large;
+  .totals{
+    margin-bottom: $margin-large;
+  }
+  #block-shipping,
+  #block-discount{
+      background: $gray;
+      padding: $padding-medium 0;
+      border-top: 1px solid $gray3;
+      border-bottom: 1px solid $gray3;
+  }
+  .checkout-methods-items{
+    margin-top: $margin-large;
+    .item{
+      text-align: center;
+      margin-bottom: $margin-large;
+      button{
+        width: 100%;
+      }
+    }
+  }
+}

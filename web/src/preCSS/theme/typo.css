@@ -1,0 +1,59 @@
+/*
+
+TYPOGRAPHY
+==========
+*/
+
+h1, 
+h1 span{
+  font-size: responsive $min-h1-fs $max-h1-fs;
+  line-height: responsive $min-h1-lh $max-h1-lh;
+  margin-bottom: $h1-margin;
+  font-weight: 300;
+}
+
+@media (--small){
+  h1,
+  h1 span{
+    margin-bottom: calc($h1-margin - 30px);
+  }
+}
+
+.block-title strong{
+  font-size: responsive $min-block-title-fs $max-block-title-fs;
+  line-height: responsive $min-block-title-lh $max-block-title-lh;
+}
+
+p,
+a,
+div,
+span,
+ul,
+li,
+label,
+input,
+th,
+td{
+  font-size: responsive $min-basefont-fs $max-basefont-fs;
+  line-height: responsive $min-basefont-lh $max-basefont-lh;
+}
+
+small span,
+.breadcrumbs a,
+.breadcrumbs strong{
+  font-size: responsive $min-smallfont-fs $max-smallfont-fs;
+  line-height: responsive $min-smallfont-lh $max-smallfont-lh;
+}
+
+.opc-wrapper .step-title,
+.opc-block-shipping-information .shipping-information-title > span,
+.opc-block-summary > .title,
+.checkout-agreements-items .checkout-agreements-item-title{
+  font-size: $checkout-headline-fs;
+  line-height: $checkout-headline-lh;
+}
+
+.fieldset > .field > .label, 
+.fieldset > .fields > .field > .label{
+  font-weight: 700;
+}
