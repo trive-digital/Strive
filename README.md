@@ -22,7 +22,7 @@ PostCSS Magento 2 system.
 - PostCSS theme fallback / child theme support
 - Small (as possible) set of PostCSS base styles and settings needed to get a working development system. Hey, it looks somehow like a Magento base theme, right? ;)
 - [BrowserSync](https://www.browsersync.io/) - instant css injecting into browser & weinre support 
-- Theme static content is watched & transferred directly into pub/static via Gulp. No need to use Magento content deploy
+- Theme static content is watched & transferred directly into pub/static via Gulp. No need to use Magento content deploy during development.
 - Added gulp clean and deploy tasks. If there is a need, `gulp clean` will remove everything in `var/cache`, `var/generation`, `var/view_preprocessed` & `pub/static` folder (Except .htaccess, magento blank & magento luma theme) and `gulp deploy` will deploy Magento static content (short of `bin/magento setup:static-content:deploy`).
 
 - PostCSS plugins used on Strive (check [npmjs](https://www.npmjs.com/) for usage):
