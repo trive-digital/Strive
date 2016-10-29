@@ -10,18 +10,18 @@ PostCSS Magento 2 system.
 
 ## Installation
 
-1. Install via Composer: `composer require trive/theme-frontend-strive` or clone this repository under Magento /app/design/frontend/Trive/blank folder & [StriveGulpTool](https://github.com/trive-digital/StriveGulpTool) inside Magento_root/strive-gulp folder. 
+1. Install via Composer: `composer require trive/theme-frontend-strive` or clone this repository under Magento /app/design/frontend/Trive/blank folder & [StriveGulpTool](https://github.com/trive-digital/StriveGulpTool) inside Magento_root/strive-gulp folder.
 2. `bin/magento setup:upgrade`
 3. `bin/magento setup:static-content:deploy`
 4. Install node_modules with `npm install` inside strive-gulp folder
-5. Set up Gulp file paths inside gulpfile. 
+5. Set up Gulp file paths inside gulpfile.
 
 ## Features & Usage
 
-- Fast css compilation thanks to PostCSS 
+- Fast css compilation thanks to PostCSS
 - PostCSS theme fallback / child theme support
 - Small (as possible) set of PostCSS base styles and settings needed to get a working development system. Hey, it looks somehow like a Magento base theme, right? ;)
-- [BrowserSync](https://www.browsersync.io/) - instant css injecting into browser & weinre support 
+- [BrowserSync](https://www.browsersync.io/) - instant css injecting into browser & weinre support
 - Theme static content is watched & transferred directly into pub/static via Gulp. No need to use Magento content deploy during development.
 - Added gulp clean and deploy tasks. If there is a need, `gulp clean` will remove everything in `var/cache`, `var/generation`, `var/view_preprocessed` & `pub/static` folder (Except .htaccess, magento blank & magento luma theme) and `gulp deploy` will deploy Magento static content (short of `bin/magento setup:static-content:deploy`).
 
@@ -43,17 +43,17 @@ PostCSS Magento 2 system.
 
 ### Creating a child theme
 
-Gulpfile paths cssSrc would be '.../Trive/theme-name/web' and cssDest: '.../Trive/theme-name/'. Child theme will need to have styles.css and settings.css inside the same folder structure like Strive (web/src/preCSS/), so it'll be needed to copy those two files from Trive/blank to child theme. 
+Gulpfile paths.cssSrc would be 'app/design/fronted/Trive/theme-name' and paths.cssDest: 'pub/static/frontend/Trive/theme-name/'. Child theme will need to have styles.css and settings.css inside the same folder structure like Strive (web/src/preCSS/), so it'll be needed to copy those two files from Trive/blank to child theme.
 
 ### Override css files
 
-'postcss-import' by default has file path fallback, so it will look for imported css files inside Trive/theme-name and if it can't find them here, it'll look into Trive/blank. To override existing blank theme css file, add css file with same name and path in child theme. postcss-import will take it instead of Trive/blank css.
+'postcss-import' looks for imported css files inside Trive/theme-name and if it can't find them here, it'll look into Trive/blank. To override existing blank theme css file, add css file with same name and path in child theme. postcss-import will take it instead of Trive/blank css.
 
 File override example: Trive/blank/web/src/preCSS/custom/icons.css -> Trive/theme-name/web/src/preCSS/custom/icons.css
 
 ### Gulp Tasks
 
-- `gulp` - Default gulp task (runs 'css', 'static', 'watch' & 'browser-sync' tasks). It watches css, html, images & js files. Browser-sync injects css file into the browser. These files, if changed, are auto transferred from theme to pub/static folder, so deployment of Magento static content would not be needed. At the moment, gulp.watch does not register new files automatically, but it does a great job in tracking modified files. So if the new css/html/image/js file is added, you'll need to stop a gulp task and run it again. (gulp-watch plugin will be probably added in the next release to fix this)
+- `gulp` - Default gulp task (runs 'css', 'static', 'watch' & 'browser-sync' tasks). It watches css, html, images & js files. Browser-sync injects css file into the browser. These files, if changed, are auto transferred from theme to pub/static folder, so deployment of Magento static content would not be needed. Gulp-watch package is added to gulpfile so newly added files are watched also. This means it's not needed to restart gulp task anymore.
 
 - `gulp clean` - Removes everything in `var/cache`, `var/generation`, `var/view_preprocessed` & `pub/static` folder (Except .htaccess, magento blank & magento luma theme)
 
