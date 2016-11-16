@@ -13,7 +13,7 @@ PostCSS Magento 2 system.
 1. Install via Composer: `composer require trive/theme-frontend-strive` or clone this repository under Magento /app/design/frontend/Trive/blank folder & [StriveGulpTool](https://github.com/trive-digital/StriveGulpTool) inside Magento_root/strive-gulp folder.
 2. `bin/magento setup:upgrade`
 3. `bin/magento setup:static-content:deploy`
-4. Install node_modules with `npm install` inside strive-gulp folder
+4. Install node_modules with `npm install` or `yarn` inside strive-gulp folder
 5. Set up Gulp file paths inside gulpfile.
 
 ## Features & Usage
@@ -49,7 +49,7 @@ Gulpfile paths.cssSrc would be 'app/design/fronted/Trive/theme-name' and paths.c
 
 'postcss-import' looks for imported css files inside Trive/theme-name and if it can't find them here, it'll look into Trive/blank. To override existing blank theme css file, add css file with same name and path in child theme. postcss-import will take it instead of Trive/blank css.
 
-File override example: Trive/blank/web/src/preCSS/custom/icons.css -> Trive/theme-name/web/src/preCSS/custom/icons.css
+File override example: Trive/blank/web/src/preCSS/theme/icons.css -> Trive/theme-name/web/src/preCSS/theme/icons.css
 
 ### Gulp Tasks
 
