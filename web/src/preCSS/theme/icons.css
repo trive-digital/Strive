@@ -10,69 +10,238 @@ ICONS
 .sorter-action,
 .previous,
 .next,
-.nav-toggle{
+.nav-toggle,
+.close,
+.action-close,
+#search_mini_form .action.search{
     &:after{
-      display: inline-block;
+      font-family: '$icon-font-name';
+      @mixin icon-font-face;
     }
     span{
-      display: none;
+      @mixin invisible;
     }
 }
 
 .breadcrumbs{
   a{
     &:after{
-      content: '>';
+      font-family: '$icon-font-name';
+      @mixin icon-font-face;
+      content: $icon-next;
     }
   }
 }
 
 .towishlist{
   &:after{
-    content: 'wishlist';
+    content: $icon-wishlist-empty;
   }
 }
 
 .tocompare{
   &:after{
-    content: 'compare';
+    content: $icon-compare-empty;
   }
 }
 
 .mailto{
   &:after{
-    content: 'mailto';
+    content: $icon-envelope;
+    float: left;
+  }
+  span{
+    @mixin invisible-reset;
   }
 }
 
 .sorter-action{
   &.sort-asc{
     &:after{
-      content: 'up';
+      content: $icon-arrow-up;
     }
   }
   &.sort-desc{
     &:after{
-      content: 'down';
+      content: $icon-arrow-down;
     }
   }
 }
 
 .previous{
   &:after{
-    content: 'prev';
+    content: $icon-prev;
   }
 }
 
 .next{
   &:after{
-    content: "next";
+    content: $icon-next;
   }
+}
+
+.close,
+.action-close{
+  &:after{
+    content: $icon-remove;
+  }
+}
+
+.switcher-options{
+  .action{
+    &.toggle{
+      &:after{
+        font-family: '$icon-font-name';
+        @mixin icon-font-face;
+        content: $icon-down;
+      }
+    }
+  }
+  &.active{
+    .action{
+      &.toggle{
+        &:after{
+          content: $icon-up;
+        }
+      }
+    }
+  }
+}
+
+.opc-block-summary .items-in-cart,
+.abs-discount-block,
+.cart-summary .block, 
+.paypal-review-discount .block{
+  & > .title{
+    &:after{
+      font-family: '$icon-font-name';
+      @mixin icon-font-face;
+      content: $icon-down;
+      float: right;
+    }
+  }
+  &.active{
+    & > .title{
+      &:after{
+        font-family: '$icon-font-name';
+        @mixin icon-font-face;
+        content: $icon-prev;
+      }
+    }
+  }
+}
+
+.modes-mode{
+  span{
+    @mixin invisible;
+  }
+  &:before{
+    font-family: '$icon-font-name';
+    @mixin icon-font-face;
+    content: $icon-grid;
+  }
+}
+.mode-list{
+  &:before{
+    content: $icon-list;
+  }
+}
+
+#search_mini_form{
+  .label{
+    &:before{
+      font-family: '$icon-font-name';
+      @mixin icon-font-face;
+      font-size: 35px;
+      line-height: 33px;
+      content: $icon-search;
+    }
+    span{
+      @mixin invisible;
+    }
+  }
+  button{
+    &.search{
+      padding: 5px 3px;
+      background: $bliss;
+      &:after{
+        content: $icon-search;
+        color: $mine-shaft;
+      }
+    }
+  }
+}
+
+.minicart-wrapper{
+  .action{
+    &.showcart{
+      &:before{
+        font-family: '$icon-font-name';
+        @mixin icon-font-face;
+        font-size: 35px;
+        line-height: 33px;
+        content: $icon-cart;
+      }
+      span{
+        &.text{
+          @mixin invisible;
+        }
+      }
+    }
+  }
+}
+.minicart-items-wrapper{
+  .item{
+    .options{
+      .toggle{
+        &:after{
+          font-family: '$icon-font-name';
+          @mixin icon-font-face;
+          content: $icon-down;
+        }
+      }
+      &.active{
+        .toggle{
+          &:after{
+            content: $icon-up;
+          }
+        }
+      }
+    }
+    .actions{
+      .edit,
+      .delete{
+        span{
+          @mixin invisible;
+        }
+        &:after{
+          font-family: '$icon-font-name';
+          @mixin icon-font-face;
+        }
+      }
+      .edit{
+        &:after{
+          content: $icon-settings;
+          
+        }
+      }
+      .delete{
+        &:after{
+          content: $icon-trash;
+        }
+      }
+    }
+  }
+  
 }
 
 .nav-toggle{
   &:before{
-    content: 'menu';
+    font-family: '$icon-font-name';
+    @mixin icon-font-face;
+    content: $icon-menu;
+    line-height: 25px;
+    font-size: 30px;
   }
 }
 
@@ -81,8 +250,10 @@ ICONS
     &._active{
       & > span{
         &:after{
-          /* Check Mark */
-          content: 'v';
+          font-family: '$icon-font-name';
+          @mixin icon-font-face;
+          content: $icon-checkmark;
+          line-height: 27px;
         }
       }
     }
@@ -96,11 +267,17 @@ ICONS
         &:after{
           position: absolute;
           right: 0;
-          content: 'down';
+          font-family: '$icon-font-name';
+          @mixin icon-font-face;
+          content: $icon-down;
+          font-size: 42px;
         }
         &.ui-state-active{
           &:after{
-            content: 'up';
+            font-family: '$icon-font-name';
+            @mixin icon-font-face;
+            content: $icon-up;
+            font-size: 42px;
           }
         }
       }
@@ -132,7 +309,7 @@ body{
         z-index: 100;
       }
       p{
-        display: none;
+        @mixin invisible;
       }
     }
   }

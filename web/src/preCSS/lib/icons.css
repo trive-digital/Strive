@@ -1,0 +1,24 @@
+/*
+
+ICONS
+=====
+*/
+
+@font-face{
+  font-family: '$icon-font-name';
+  src: url('$icon-font-path.eot');
+  src: url('$icon-font-path.eot?#iefix') format('embedded-opentype'),
+  url('$icon-font-path.woff2') format('woff2'),
+  url('$icon-font-path.woff') format('woff'),
+  url('$icon-font-path.ttf') format('truetype'),
+  url('$icon-font-path.svg#$icon-font-name') format('svg');
+}
+
+@define-mixin icon-font-face{
+  -webkit-font-smoothing: antialiased;
+  font-weight: $icon-font-weight;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: $icon-font-size;
+  line-height: $icon-line-height;
+}

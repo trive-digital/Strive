@@ -57,9 +57,10 @@ OPC PROGRESS BAR
         background: $bliss;
         height: 26px;
         margin-left: -13px;
-        padding: 3px 0 0 3px;
+        padding: 0;
         top: 6px;
         width: 26px;
+        line-height: 27px;
         content: counter(i);
         counter-increment: i;
         color: $mine-shaft;

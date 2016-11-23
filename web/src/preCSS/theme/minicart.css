@@ -9,6 +9,9 @@ MINICART
   margin-left: $margin-medium;
   position: relative;
   float: right;
+  @media (--small){
+    margin-top: 10px;
+  }
   .showcart{
     vertical-align: -webkit-baseline-middle;
   }

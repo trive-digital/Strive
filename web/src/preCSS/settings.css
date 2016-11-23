@@ -153,3 +153,59 @@ BLOCKS
 */
 
 $block-title-margin: 20px;
+
+/*
+
+ICONS
+=====
+*/
+
+$icon-font-name: icons-blank-theme;
+$icon-font-path: ../fonts/Blank-Theme-Icons/Blank-Theme-Icons;
+$icon-font-weight: normal;
+$icon-font-size: 29px;
+$icon-line-height: 18px;
+
+$icon-wishlist-full: '\e600';
+$icon-wishlist-empty: '\e601';
+$icon-warning: '\e602';
+$icon-update: '\e603';
+$icon-trash: '\e604';
+$icon-star: '\e605';
+$icon-settings: '\e606';
+$icon-pointer-down: '\e607';
+$icon-next: '\e608';
+$icon-menu: '\e609';
+$icon-location: '\e60a';
+$icon-list: '\e60b';
+$icon-info: '\e60c';
+$icon-grid: '\e60d';
+$icon-comment-reflected: '\e60e';
+$icon-collapse: '\e60f';
+$icon-checkmark: '\e610';
+$icon-cart: '\e611';
+$icon-calendar: '\e612';
+$icon-arrow-up: '\e613';
+$icon-arrow-down: '\e614';
+$icon-search: '\e615';
+$icon-remove: '\e616';
+$icon-prev: '\e617';
+$icon-pointer-up: '\e618';
+$icon-pointer-right: '\e619';
+$icon-pointer-left: '\e61a';
+$icon-flag: '\e61b';
+$icon-expand: '\e61c';
+$icon-envelope: '\e61d';
+$icon-compare-full: '\e61e';
+$icon-compare-empty: '\e61f';
+$icon-comment: '\e620';
+$icon-up: '\e621';
+$icon-down: '\e622';
+$icon-help: '\e623';
+$icon-arrow-right-thin: '\e624';
+$icon-arrow-left-thin: '\e625';
+$icon-arrow-down-thin: '\e626';
+$icon-account: '\e627';
+$icon-gift-registry: '\e628';
+$icon-present: '\e629';
+$icon-arrow-up-thin: '\e633';
