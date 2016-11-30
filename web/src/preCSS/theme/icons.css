@@ -108,6 +108,29 @@ ICONS
   }
 }
 
+.checkout-payment-method{
+  .payment-option{
+    .payment-option-title{
+      .action-toggle{
+        &:after{
+          font-family: '$icon-font-name';
+          @mixin icon-font-face;
+          content: $icon-down;
+        }
+      }
+    }
+    &._active{
+      .payment-option-title{
+        .action-toggle{
+          &:after{
+            content: $icon-up;
+          }
+        }
+      }
+    }
+  }
+}
+
 .opc-block-summary .items-in-cart,
 .abs-discount-block,
 .cart-summary .block, 

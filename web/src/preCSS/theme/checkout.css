@@ -59,13 +59,40 @@ CHECKOUT
   .action-select-shipping-item{
    float: right;
   }
+  .checkout-payment-method{
+    #co-payment-form{
+      legend{
+        @mixin invisible;
+      }
+      .payment-method{
+        .payment-method-title{
+          margin: 0;
+        }
+        .payment-method-content{
+          display: none;
+          .actions-toolbar{
+            text-align: right;
+          }
+        }
+        &._active{
+          .payment-method-content{
+            display: block;
+          }
+        }      
+      }
+      .payment-option-title{
+        margin: 0;
+      }
+    }
+  }
 }
 
 .payment-method-billing-address{
   margin-bottom: $margin-large;
 }
 
-.payment-option-title{
+.payment-option-title,
+.payment-method-title{
   border-top: 1px solid $gray3;
   padding: $padding-large 0;
   margin-top: $margin-large;
