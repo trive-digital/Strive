@@ -39,6 +39,7 @@ body{
   footer,
   .breadcrumbs,
   .nav-sections-items{
+    display:block;
     lost-center: $site-width 15px;
     @media (--small){
       lost-center: $mobile-site-width;
