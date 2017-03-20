@@ -2,9 +2,19 @@
   "name": "trive/theme-frontend-strive",
   "description": "PostCSS Magento 2 system",
   "type": "magento2-module",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "require": {
-    "trive/strive-gulp": "1.0.3"
+    "trive/strive-gulp": "1.0.4"
+  },
+  "authors": [
+    {
+      "name": "Marjan Bonus",
+      "email": "bonus@trive.digital",
+      "homepage": "http://trive.digital/"
+    }
+  ],
+  "autoload": {
+    "files": [ "registration.php" ]
   }
 }
