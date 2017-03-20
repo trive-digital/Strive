@@ -59,6 +59,12 @@ File override example: Trive/blank/web/src/preCSS/theme/icons.css -> Trive/theme
 
 - `gulp deploy` - It's a short of `bin/magento setup:static-content:deploy`. There is no problem to use longer option either :)
 
+#### Update
+
+- `gulp upgrade` - Short of 'bin/magento setup:upgrade'
+
+- `gulp deploy`  - Excluded Magento/blank & Mageto/luma by default. Faster deployment this way...
+
 ## Demo
 
 Working demo of Strive can be checked here: [http://strive.jakesharpdev.com/](http://strive.jakesharpdev.com/)
