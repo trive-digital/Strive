@@ -67,4 +67,4 @@ File override example: Trive/blank/web/src/preCSS/theme/icons.css -> Trive/theme
 
 ## Demo
 
-Working demo of Strive can be checked here: [http://strive.jakesharpdev.com/](http://strive.jakesharpdev.com/)
+Working demo of Strive can be checked here: [https://strive.public.trivedev.com/](https://strive.public.trivedev.com/)
