@@ -1,0 +1,44 @@
+#layered-filter-block{
+  .filter-options-item{
+    .filter-options-title{
+      cursor: pointer;
+      border-top: 1px solid $gray3;
+      padding: $padding-small 0;
+    }
+    .filter-options-content{
+      display: none;
+    }
+    &:last-child{
+      border-bottom: 1px solid $gray3;
+    }
+  }
+  @media (--small){
+    .filter-content{
+      display: none;
+    }
+    &.active{
+      .filter-title{
+        border-bottom: 1px solid $gray3;
+        background: $bliss;
+        height: 40px;
+        padding: $padding-small 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2;
+      }
+      .filter-content{
+        display: block;
+        background: $bliss;
+        bottom: 0;
+        left: 0;
+        overflow: scroll;
+        position: fixed;
+        right: 0;
+        top: 40px;
+        z-index: 10;
+      }
+    }
+  }
+}

@@ -46,3 +46,13 @@ button{
         width: 100%;
     }
 }
+
+button{
+  &.switch{
+    padding: 0;
+    background: $gray4;
+    &:hover{
+      background: $mine-shaft;
+    }
+  }
+}

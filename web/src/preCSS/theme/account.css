@@ -11,29 +11,83 @@ ACCOUNT
       float: right;
     }
   }
-  .sidebar-main{
-    .title{
-      display: none;
-    }
-    .content{
-      padding: $padding-medium 0;
-      .account-nav{
-        li{
-          margin-bottom: $margin-small;
-          a,
-          strong{
-            padding: $padding-small $padding-large;
-            display: block;
-            border-left: 3px solid transparent;
-          }
-          a:hover {
-            background: $gray3;
+  #maincontent{
+    & > .columns{
+      @media (--small){
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        .column{
+          &.main{
+            -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+            -webkit-flex-grow: 1;
+            flex-grow: 1;
+            -ms-flex-order: 2;
+            -webkit-order: 2;
+            order: 2;
+            width: 100%;
           }
         }
-        li.current{
-          a,
-          strong{
-            border-left: 3px solid $error-color;
+        .sidebar-main{
+          -webkit-flex-basis: 100%;
+          flex-basis: 100%;
+          -webkit-flex-grow: 1;
+          flex-grow: 1;
+          -ms-flex-order: 1;
+          -webkit-order: 1;
+          order: 1;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .sidebar-main{
+    .block-collapsible-nav{
+      @media (--small){
+        left: 0;
+        width: 100%;
+        z-index: 5;
+      }
+      &-title{
+        @media (--medium-up){
+          @mixin invisible;
+        }
+        padding: $padding-small 0;
+        border-top: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+      }
+      &-content{
+        @media (--small){
+          @mixin invisible;
+          &.active{
+            padding: $padding-small;
+            @mixin invisible-reset;
+          }
+        }
+        background: $gray;
+        padding: $padding-small;
+        .account-nav{
+          li{
+            margin-bottom: $margin-small;
+            a,
+            strong{
+              padding: $padding-small $padding-large;
+              display: block;
+              border-left: 3px solid transparent;
+            }
+            a:hover {
+              background: $gray3;
+            }
+          }
+          li.current{
+            a,
+            strong{
+              border-left: 3px solid $error-color;
+            }
           }
         }
       }

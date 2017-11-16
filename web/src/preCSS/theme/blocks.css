@@ -5,18 +5,26 @@ BLOCKS
 */
 
 .block{
-  .block-title{
+  margin-bottom: $block-title-margin;
+  .block-title,
+  .block-subtitle,
+  .block-actions{
+    display: block;
     margin-bottom: $block-title-margin;
   }
   background: $bliss;
-  
+
   &.block-search{
+    margin: 0;
     @media (--medium-up){
       position: relative;
     }
     float: right;
     .block-title{
       display: none;
+    }
+    .block-content{
+      margin: 0;
     }
     #search{
       @media (--medium-up){
@@ -75,7 +83,7 @@ BLOCKS
       }
     }
   }
-  
+
   &.block-minicart{
     display: none;
     padding: $padding-large;
@@ -137,7 +145,7 @@ BLOCKS
       }
     }
   }
-  
+
   &.newsletter{
     text-align: right;
     .title,
@@ -148,7 +156,7 @@ BLOCKS
       text-align: left;
     }
   }
-  
+
   &.block-customer-login{
     margin-bottom: $margin-large;
     @media (--small){
@@ -160,11 +168,11 @@ BLOCKS
       }
     }
   }
-  
+
   &.account-nav{
     background: $gray;
   }
-  
+
   &.block-reorder{
     ol{
       li{

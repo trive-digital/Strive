@@ -195,8 +195,31 @@ NAVIGATION
             }
           }
         }
-        .header.links, .switcher{
+        .header.links,
+        .switcher{
           padding: $padding-large;
+        }
+        & > .header{
+          &.links{
+            & > .customer-welcome{
+              button{
+                width: 30px;
+              }
+              .customer-menu{
+                @mixin invisible;
+              }
+              &.active{
+                .customer-menu{
+                  @mixin invisible-reset;
+                }
+              }
+            }
+            .header{
+                .authorization-link{
+                  @mixin invisible;
+                }
+            }
+          }
         }
       }
     }

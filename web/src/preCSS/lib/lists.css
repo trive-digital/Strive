@@ -1,0 +1,6 @@
+ul,
+ol{
+  li{
+    padding: $padding-small 0;
+  }
+}
