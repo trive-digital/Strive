@@ -6,7 +6,7 @@ GRID
 
 body{
   header{
-    & > .panel,
+    & > .panel:not(.wrapper),
     & > .header{
       lost-center: $site-width 15px;
       @media (--small){
@@ -14,6 +14,12 @@ body{
       }
     }
     & > .panel{
+      &.wrapper{
+        lost-utility: clearfix;
+        .header{
+          lost-center: $site-width 0;
+        }
+      }
       .links{
         li{
           display: inline-block;
@@ -45,7 +51,7 @@ body{
       lost-center: $mobile-site-width;
     }
   }
-  
+
   .column{
     &.main{
         padding-bottom: $padding-large;
@@ -56,7 +62,7 @@ body{
         }
     }
   }
-  
+
   &.page-layout-2columns-left{
     @media (--small){
       .columns{
@@ -77,7 +83,7 @@ body{
         }
       }
     }
-    
+
     &.account{
       @media (--small){
         .columns{
@@ -99,13 +105,13 @@ body{
         }
       }
     }
-    
+
     @media (--medium-up){
       .columns{
         lost-utility: clearfix;
         .main{
             lost-column: 4/5 1;
-            min-height: 400px;
+            min-height: 600px;
         }
         .sidebar{
           &.sidebar{
@@ -192,7 +198,7 @@ body{
         }
     }
   }
-  
+
   .cart-container{
     lost-utility: clearfix;
     .cart-summary{
@@ -212,7 +218,7 @@ body{
       }
     }
   }
-  
+
   .login-container{
     lost-utility: clearfix;
     @media (--medium-up){
@@ -222,7 +228,7 @@ body{
       }
     }
   }
-  
+
   footer{
     border-top: 1px solid $gray3;
     padding-top: $padding-large;
@@ -273,7 +279,7 @@ body{
       }
     }
   }
-  
+
   @media (--medium-up){
     .opc-wrapper{
       lost-column: 2/3;
@@ -283,7 +289,7 @@ body{
       margin: $margin-large 0;
     }
   }
-  
+
   .products-grid{
     lost-utility: clearfix;
     .product-item{
@@ -300,7 +306,7 @@ body{
         }
     }
   }
-  
+
   .products-list{
     lost-utility: clearfix;
     .product-item-photo,

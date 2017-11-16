@@ -13,7 +13,11 @@ ICONS
 .nav-toggle,
 .close,
 .action-close,
-#search_mini_form .action.search{
+.action.remove,
+#search_mini_form .action.search,
+.action.switch,
+.filter-options-title,
+.block-collapsible-nav-title{
     &:after{
       font-family: '$icon-font-name';
       @mixin icon-font-face;
@@ -68,6 +72,61 @@ ICONS
   }
 }
 
+.customer-welcome{
+  .action{
+    &.switch{
+      &:after{
+        content: $icon-down;
+      }
+    }
+  }
+  &.active{
+    .action{
+      &.switch{
+        &:after{
+          content: $icon-up;
+        }
+      }
+    }
+  }
+}
+
+.filter-options-item{
+  .filter-options-title{
+    position: relative;
+    &:after{
+      content: $icon-down;
+      position: absolute;
+      top: 7px;
+      right: 0;
+    }
+  }
+  &.active{
+    .filter-options-title{
+      &:after{
+        content: $icon-up;
+      }
+    }
+  }
+}
+
+.block-collapsible-nav-title{
+  @media (--small){
+    position: relative;
+    &:after{
+      content: $icon-down;
+      position: absolute;
+      top: 7px;
+      right: 0;
+    }
+    &.active{
+      &:after{
+        content: $icon-up;
+      }
+    }
+  }
+}
+
 .previous{
   &:after{
     content: $icon-prev;
@@ -81,7 +140,8 @@ ICONS
 }
 
 .close,
-.action-close{
+.action-close,
+.action.remove{
   &:after{
     content: $icon-remove;
   }
@@ -133,7 +193,7 @@ ICONS
 
 .opc-block-summary .items-in-cart,
 .abs-discount-block,
-.cart-summary .block, 
+.cart-summary .block,
 .paypal-review-discount .block{
   & > .title{
     &:after{
@@ -176,7 +236,7 @@ ICONS
       font-family: '$icon-font-name';
       @mixin icon-font-face;
       font-size: 35px;
-      line-height: 33px;
+      line-height: 60px;
       content: $icon-search;
     }
     span{
@@ -245,7 +305,7 @@ ICONS
       .edit{
         &:after{
           content: $icon-settings;
-          
+
         }
       }
       .delete{
@@ -255,7 +315,7 @@ ICONS
       }
     }
   }
-  
+
 }
 
 .nav-toggle{
@@ -334,6 +394,21 @@ body{
       p{
         @mixin invisible;
       }
+    }
+  }
+}
+
+.active .filter-title strong{
+  position: relative;
+  display: block;
+  @media (--small){
+    &:after{
+      font-family: '$icon-font-name';
+      @mixin icon-font-face;
+      content: $icon-remove;
+      position: absolute;
+      top: 5px;
+      right: 10px;
     }
   }
 }

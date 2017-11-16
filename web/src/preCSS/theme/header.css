@@ -4,6 +4,20 @@ HEADER
 ======
 */
 
+header{
+  .search{
+    .advanced{
+      @mixin invisible;
+    }
+  }
+  .header{
+    &.content{
+      padding-top: $padding-large;
+      padding-bottom: $padding-large;
+    }
+  }
+}
+
 @media (--small){
   header{
     .links,
@@ -30,6 +44,10 @@ HEADER
           @mixin invisible;
         }
       }
+      &.wrapper{
+        background: $gray4;
+        padding: 0;
+      }
       .contentarea{
         @mixin invisible;
       }
@@ -40,11 +58,36 @@ HEADER
           &:last-child{
             margin: 0;
           }
+          &.welcome{
+            span{
+              color: $bliss;
+            }
+          }
         }
       }
-    }
-    .content{
-      padding: $padding-large 0;
+      .customer-welcome{
+        position: relative;
+        color: $bliss;
+        .customer-menu{
+          @mixin invisible;
+        }
+        &.active{
+          .customer-menu{
+            @mixin invisible-reset;
+            position: absolute;
+            z-index: 1;
+            background: $bliss;
+            padding: $padding-small;
+            border: 1px solid $gray;
+            li{
+              padding: $padding-small 0;
+            }
+          }
+        }
+        & + .authorization-link{
+          @mixin invisible;
+        }
+      }
     }
   }
 }

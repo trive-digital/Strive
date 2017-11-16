@@ -12,6 +12,7 @@ STRIVE - PostCSS Magento 2 system
 @import 'lib/buttons';
 @import 'lib/forms';
 @import 'lib/selects';
+@import 'lib/lists';
 @import 'lib/reset';
 @import 'lib/box-sizing';
 @import 'lib/typo';
@@ -30,7 +31,6 @@ M2 STYLES
 @import 'theme/typo';
 @import 'theme/header';
 @import 'theme/minicart';
-@import 'theme/filter';
 @import 'theme/icons';
 @import 'theme/links';
 @import 'theme/blocks';
@@ -53,3 +53,4 @@ M2 STYLES
 @import 'theme/inputs';
 @import 'theme/swatches';
 @import 'theme/tooltip';
+@import 'theme/layer';
